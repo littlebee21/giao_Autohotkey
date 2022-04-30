@@ -22,5 +22,5 @@ git commit -m "all commit"
 
 
 #orgin 是起源的意思 main是分治
-git push -u origin main
-#git push -u -f orgin main
+git push -u origin master
+#git push -u -f origin master

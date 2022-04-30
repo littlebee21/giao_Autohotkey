@@ -1,0 +1,198 @@
+myhotkey 备用
+
+!g:: ;打开找到对应目录的pdf文件在everthing中
+    Click
+    send ^c
+    holefilename = %clipboard%
+    StringReplace, Clipboard, Clipboard, txt, pdf, 
+    send !,
+    sleep 200
+    send ^v
+    sleep 200
+    send {enter}
+    MouseMove, 541, 961 ;鼠标移动到当前应用合适位置
+    Click
+    return
+
+
+:*:cmdg/::;打开gao目录下的文件路径
+    cmd1 = C:
+    cmd2 = cd C:\Users\gao
+    Run,%ComSpec% /k %cmd1% && %cmd2%
+    return
+
+
+:*:osi/::  ;打开思维导图目录
+        code = F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe
+        file = F:\all\note\siwei
+        Run,%code% "%file%"
+        return
+
+    :*:otp/::  ;打开临时代码目录
+        code = F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe
+        file = F:\codehub\tempcode
+        Run,%code% "%file%"
+        return
+
+
+;anytxt软件 
+    !.:: ;对使用anytxt的鼠标位置进行初始化
+        send, {alt down}{.}
+        sleep 50
+        send, {alt up}
+        MouseMove, 80, 100 ;鼠标移动到当前应用合适位置
+        return
+
+    :*:asc/::  ;在F盘中查找c语言代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .c /s linux
+        Run,%ComSpec% /c %cmd%
+        return
+
+    :*:asj/::  ;在F盘中查找java语言代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .java /s linux
+        Run,%ComSpec% /c %cmd%
+        return
+    
+    :*:asf/::  ;在F盘中查找
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e * /s linux
+        Run,%ComSpec% /c %cmd%
+        return
+
+    :*:asa/::  ;在all目录下查找
+        Run,%ComSpec% /c "C: && cd C:\Program Files (x86)\AnyTXT Searcher && atgui /d F:\all\ /e * /s linux"
+        return
+
+    :*:as/:: ;对应文件夹的内容
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        send ^c
+        sleep 100
+        send ^c
+        file = %clipboard%
+        cmd = C: && cd %app% && atgui /d %file% /e * /s linux
+        Run,%ComSpec% /c %cmd%
+        return
+
+    :*:a/:: ;在F盘中查找
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e * /s main
+        Run,%ComSpec% /c %cmd%
+        return
+
+
+
+MouseMove, 541, 961 ;鼠标移动到当前应用合适位置
+    return
+
+
+:*:ff/:: ;查找应用并查找
+    send {enter}
+    Click 2
+    sleep 100
+    send {enter}
+    sleep 2000
+    send ^f
+    return
+
+#c::
+send ^c
+sleep,200
+clipboard=%clipboard%
+;windows复制的时候，剪贴板保存的是“路径”。路径不是字符串，只要转换成字符串就可以粘贴出来了。
+tooltip,%clipboard%
+sleep,500
+tooltip,
+return
+ 
+
+ send ^c
+        sleep 100
+        clipboard = %clipboard%
+        Run,%ComSpec% /k  cd %clipboard%
+
+
+!':: MouseClick,WheelUp,,,1,0,D,R
+!/:: MouseClick,WheelDown,,,1,0,D,R
+
+
+;慢速移动
+esc::esc 
+esc & j:: MouseMove, -8, 0, 0, R ;鼠标向左移动10
+esc & l:: MouseMove, 8, 0, 0, R ;鼠标向右移动10
+esc & i:: MouseMove, 0, -8, 0, R ;鼠标向上移动10
+esc & k:: MouseMove, 0, 8, 0, R ;鼠标向下移动10
+
+
+esc::esc
+esc & i:: send,{left}
+esc & a:: send,{right}
+esc & u:: send,{home}
+esc & o:: send,{end}
+
+esc & k:: send,{up}
+esc & j:: send,{down}
+esc & h:: send,{left}
+esc & l:: send,{right}
+
+Alt & q::send,{home}
+Alt & e::send,{end}
+
+
+#If GetKeyState("esc", "T")=1
+
+
+
+#If GetKeyState("F2", "T")=1
+
+; The following hotkeys will only be effective if GetKeyState("CapsLock", "T")=1
+h::Send,{Left}
+l::Send,{Right}
+k::Send,{Up}
+j::Send,{Down}
++a::Send,{end}{F2}
++i::Send,{home}{F2}
+
+x:: send ^w
+
+:*:ii:: 
+    Send,{F2}
+return
+
+
+!3::
+InputBox, UserInput, GO, Please enter a phone number., , 200, 100
+if ErrorLevel
+{
+    MsgBox, CANCEL was pressed.
+}
+else
+{
+    Activate(%UserInput%)
+    MsgBox, You entered %UserInput%   
+}
+return
+
+
+;慢速移动
+Alt & j:: MouseMove, -180, 0, 0, R ;鼠标向左移动10
+Alt & l:: MouseMove, 180, 0, 0, R ;鼠标向右移动10
+Alt & i:: MouseMove, 0, -180, 0, R ;鼠标向上移动10
+Alt & k:: MouseMove, 0, 180, 0, R ;鼠标向下移动10
+
+
+
+
+!v::
+MouseGetPos, xpos, ypos 
+MsgBox, The cursor is at X%xpos% Y%ypos%.
+return
+
+
+   :*:/m:: ;cmd打开对应文件内容
+        send ^c
+        ActivateAndOpen("命令","C:\Users\gao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk")
+        sleep 1000
+        clipboard = F: && cd %clipboard% && treee -L 3
+        return

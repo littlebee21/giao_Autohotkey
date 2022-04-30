@@ -23,6 +23,18 @@ Alt & s::send,{down}
 
 Alt & q::send,{home}
 Alt & e::send,{end}
+Alt & z::
+    loop 5 {
+        send,{down}
+    }
+    return
+Alt & c::
+    loop 5 {
+        send,{up}
+    }
+    return
+
+
 ;全局按键
 ;alt + 3 进行快速截图
 ;alt + e 进行快速保存截图
