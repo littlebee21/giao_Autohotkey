@@ -15,7 +15,8 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiv
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse" | sudo tee /etc/apt/sources.list
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse"  \
+> /etc/apt/sources.list
 if [ $? -ne 0 ];then
     echo "#######################"
     echo "change apt image fail\n"
@@ -25,17 +26,25 @@ fi
 
 # 安装树形
 sudo apt install tree
-sudo apt install gcc
 sudo apt install git
+sudo apt install ifconfig
+sudo apt install ssh
 sudo apt install vim
+#sudo apt install spacevim
+
+#语言和工具
 sudo apt install g++
 sudo apt install make
+sudo apt install gcc
+#sudo apt install python3.6
+#sudo apt install jdk
+#node
 
 
 # 交叉编译工具
 #sudo apt install tftp-hpa tftpd-hpa
 #sudo apt install nfs-kernel-server
-sudo apt install lib32ncurses5 lib32z1
+sudo apt install lib32ncurses5 lib32z1  #64位系统运行32位程序
 
 
 # 复制对应的内容到工作目录
