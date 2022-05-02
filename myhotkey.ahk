@@ -432,7 +432,7 @@ return
     :*:ge\:: ;gitee网站
         Run https://gitee.com/
         return
-    :*:gi\:: ;gitee网站
+    :*:g\:: ;github网站
         Run https://github.com/
         return
     :*:cs\:: ;;csdn网站
