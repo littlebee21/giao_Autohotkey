@@ -24,12 +24,12 @@ Alt & s::send,{down}
 Alt & q::send,{home}
 Alt & e::send,{end}
 Alt & z::
-    loop 5 {
+    loop 10 {
         send,{down}
     }
     return
 Alt & c::
-    loop 5 {
+    loop 10 {
         send,{up}
     }
     return
@@ -105,6 +105,7 @@ return
 
 !f::  ;对查找ctrl+f进行修改
     ;第一次查找
+    send ^c
     send ^+f
     sleep 500
     send ^v
@@ -431,6 +432,9 @@ return
     :*:ge\:: ;gitee网站
         Run https://gitee.com/
         return
+    :*:gi\:: ;gitee网站
+        Run https://github.com/
+        return
     :*:cs\:: ;;csdn网站
         Run https://so.csdn.net/so/search?
         return
@@ -475,6 +479,7 @@ return
 	run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索
 	run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
     run https://zhidao.baidu.com/search?word=%clipboard%        ;1,百度知道搜索
+    run https://github.com/littlebee21/siwei/search?p=%clipboard%   ;0 个人github查找
     return
 
 
