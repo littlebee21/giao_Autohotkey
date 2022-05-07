@@ -196,3 +196,43 @@ return
         sleep 1000
         clipboard = F: && cd %clipboard% && treee -L 3
         return
+
+    
+
+    
+ :*:x\::
+        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
+        return
+
+
+AnyTXT_cmd(cmd)
+{
+    app = C:\Program Files (x86)\AnyTXT Searcher
+    cmd = %cmd%
+    Run,%ComSpec% /c %cmd%
+    return
+}
+
+    :*:a\:: ;在F盘中查找
+        AnyTXT_cmd("C: && cd %app% && atgui /d F:\ /e * /s main")
+        return
+    :*:ac\::  ;在F盘中查找c 代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .c /s main
+        Run,%ComSpec% /c %cmd%
+        return
+    :*:ac\::  ;在F盘中查找c头文件代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .h /s define
+        Run,%ComSpec% /c %cmd%
+        return
+    :*:aj\::  ;在F盘中查找java 代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .java /s main
+        Run,%ComSpec% /c %cmd%
+        return
+    :*:ap\::  ;在F盘中查找c++ 代码
+        app = C:\Program Files (x86)\AnyTXT Searcher
+        cmd = C: && cd %app% && atgui /d F:\ /e .cpp /s main
+        Run,%ComSpec% /c %cmd%
+        return

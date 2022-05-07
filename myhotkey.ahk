@@ -23,16 +23,21 @@ Alt & s::send,{down}
 
 Alt & q::send,{home}
 Alt & e::send,{end}
-Alt & z::
-    loop 10 {
-        send,{down}
-    }
-    return
 Alt & c::
-    loop 10 {
+    loop 13 {
         send,{up}
     }
+    MouseClick,WheelUp,,,1,0,D,R
     return
+Alt & x::
+    loop 13 {
+        send,{down}
+    }
+    MouseClick,WheelDown,,,1,0,D,R
+    return
+
+;插入修改的时间戳
+!'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 
 
 ;全局按键
@@ -105,11 +110,10 @@ return
 
 !f::  ;对查找ctrl+f进行修改
     ;第一次查找
-    send ^c
     send ^+f
-    sleep 500
-    send ^v
-    send {enter}
+    ;sleep 500
+    ;send ^v
+    ;send {enter}
     return
 
 ;####### 打开应用 ####################
@@ -169,7 +173,7 @@ return
     return
     }
     
-    :*:c/::
+    :*:c\::
         ActivateAndOpen("Code","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
         return
     :*:t\::
@@ -183,9 +187,6 @@ return
         return
     :*:p\::
         ActivateAndOpen("PDF","C:\Users\gao\AppData\Local\SumatraPDF\SumatraPDF.exe")
-        return
-    :*:x\::
-        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
         return
     :*:v\::
         ActivateAndOpen("VMware Workstation","F:\Program Files (x86)\VMware\VMware Workstation\vmware.exe")
@@ -219,38 +220,6 @@ return
 
     
 
-AnyTXT_cmd(cmd)
-{
-    app = C:\Program Files (x86)\AnyTXT Searcher
-    cmd = %cmd%
-    Run,%ComSpec% /c %cmd%
-    return
-}
-
-    :*:a\:: ;在F盘中查找
-        AnyTXT_cmd("C: && cd %app% && atgui /d F:\ /e * /s main")
-        return
-    :*:ac\::  ;在F盘中查找c 代码
-        app = C:\Program Files (x86)\AnyTXT Searcher
-        cmd = C: && cd %app% && atgui /d F:\ /e .c /s main
-        Run,%ComSpec% /c %cmd%
-        return
-    :*:ac\::  ;在F盘中查找c头文件代码
-        app = C:\Program Files (x86)\AnyTXT Searcher
-        cmd = C: && cd %app% && atgui /d F:\ /e .h /s define
-        Run,%ComSpec% /c %cmd%
-        return
-    :*:aj\::  ;在F盘中查找java 代码
-        app = C:\Program Files (x86)\AnyTXT Searcher
-        cmd = C: && cd %app% && atgui /d F:\ /e .java /s main
-        Run,%ComSpec% /c %cmd%
-        return
-    :*:ap\::  ;在F盘中查找c++ 代码
-        app = C:\Program Files (x86)\AnyTXT Searcher
-        cmd = C: && cd %app% && atgui /d F:\ /e .cpp /s main
-        Run,%ComSpec% /c %cmd%
-        return
-
 ;########### 关闭对应大的文件 ###########################
 ;打开特定文件夹，alt+q关闭
 
@@ -265,14 +234,13 @@ AnyTXT_cmd(cmd)
         Run,%code% "%file%"
         return
 
-    :*:\a:: ;anytxt搜索对应文件夹的内容
-        app = C:\Program Files (x86)\AnyTXT Searcher
+    :*:\b:: ;cmder bash打开对应文件内容
         send ^c
-        sleep 100
-        send ^c
-        file = %clipboard%
-        cmd = C: && cd %app% && atgui /d %file% /e * /s linux
-        Run,%ComSpec% /c %cmd%
+        ;ActivateAndOpen("TOE9G11","F:\software\cmder_mini\vendor\conemu-maximus5\ConEmu64.exe")
+        clipboard = %clipboard%
+        ;StringReplace, Clipboard, Clipboard, `\, /, All
+        sleep 500
+        send {ctrl}{insert}
         return
 
 
@@ -409,7 +377,7 @@ return
 		run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
         return
     :*:d\:: 
-        run https://www.baidu.com/
+        run https://www.baidu.com/s?word=%clipboard% 
         return 
     :*:l\:: ;;chrome历史记录
         ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
@@ -427,7 +395,7 @@ return
         return
     
     :*:s\:: ;google网站
-        Run https://google.com
+        Run https://www.google.com/search?q=%clipboard%
         return
     :*:ge\:: ;gitee网站
         Run https://gitee.com/

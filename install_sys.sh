@@ -23,6 +23,7 @@ if [ $? -ne 0 ];then
     echo "#######################"
 fi
 
+sudo apt update
 
 # 安装树形
 sudo apt install tree
@@ -31,6 +32,7 @@ sudo apt install ifconfig
 sudo apt install ssh
 sudo apt install vim
 #sudo apt install spacevim
+#sudo apt install curl
 
 #语言和工具
 sudo apt install g++
@@ -40,15 +42,21 @@ sudo apt install gcc
 #sudo apt install jdk
 #node
 
+#大件工具安装
+#mysql
+#redis 
+#nginx
 
 # 交叉编译工具
+#sudo apt install gcc-arm-linux-gnueabi
+#sudo apt install g++-arm-linux-gnueabi
 #sudo apt install tftp-hpa tftpd-hpa
 #sudo apt install nfs-kernel-server
-sudo apt install lib32ncurses5 lib32z1  #64位系统运行32位程序
+#sudo apt install lib32ncurses5 lib32z1  #64位系统运行32位程序
 
 
 # 复制对应的内容到工作目录
 mkdir ~/work_table
-sudo cp /mount 
+# sudo cp /mnt ~/work_table
 
 # 对内核的配置
