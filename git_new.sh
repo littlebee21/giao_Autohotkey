@@ -8,7 +8,7 @@ git init
 git checkout -b
 
 #set branch and respos
-git branch -M main
+git branch -M master
 
 # 设置远程仓库，ssh方式的不需要使用密码
 # git remote add origin https://github.com/littlebee21/siwei.git

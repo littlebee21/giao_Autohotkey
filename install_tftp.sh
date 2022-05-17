@@ -18,25 +18,29 @@ sudo chmod -R 777 /tftpboot #修改目录权限
 #文件内容如下：
 #RUN_DAEMON="no"
 #OPTIONS="-s /tftpboot -c -p -U tftpd"
-sudo echo "
-TFTP_USERNAME="tftp"
-TFTP_DIRECTORY="/tftpboot"
-TFTP_ADDRESS="0.0.0.0:69"
-TFTP_OPTIONS="-l -c -s"
-" >> /etc/default/tftpd-hpa
+sudo cp /etc/default/tftpd-hpa   /etc/default/tftpd-hpa-back
+sudo echo  "TFTP_USERNAME=\"tftp\"
+TFTP_DIRECTORY=\"/tftpboot\"  
+TFTP_ADDRESS=\"0.0.0.0:69\"
+TFTP_OPTIONS=\"-l -c -s\" " \
+ > /etc/default/tftpd-hpa
+
+
+
+
+ #测试
+ touch /tftpboot/hello.txt
+ sudo echo "hello" >> /tftpd/hello.txt
 
 
 #运行服务端
 sudo service tftpd-hpa restart
 
-
- #测试
- cd /tftpboot
- touch hello.txt
- sudo echo "hello" >> /tftpd/hello.txt
+ #查看脚本的内容确定下面的测试内容
+ cat ./install_tftp.sh
 
  cd ~
  tftp 127.0.0.1
- tftp>get hello.txt
- tftp>q
- cat hello.txt #查看xxx内容为上面输入的内容则表示安装成功，否则安装过程有问题
+ #tftp>get hello.txt
+ #tftp>q
+ #cat hello.txt #查看xxx内容为上面输入的内容则表示安装成功，否则安装过程有问题

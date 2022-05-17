@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "generic/ubuntu1804"
 
   config.vm.hostname = "hostname"   #定义虚拟机名字
-  config.vm.network "private_network", ip: "192.168.9.30" #默认就是22
+  config.vm.network "private_network", ip: "192.168.9.16" #默认就是22
   #config.vm.network "public_network", bridge: "en1: Wi-Fi (AirPort)"
   #config.vm.network "public_network", ip: "192.168.9.16"
   config.vm.network "forwarded_port", guest: 80, host: 8080

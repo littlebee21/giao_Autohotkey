@@ -38,6 +38,7 @@ Alt & x::
 
 ;插入修改的时间戳
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
+:*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
 
 
 ;全局按键
@@ -178,6 +179,9 @@ return
         return
     :*:t\::
         ActivateAndOpen("TIM","C:\Program Files (x86)\Tencent\TIM\Bin\TIM.exe")
+        return
+    :*:md\::
+        ActivateAndOpen("Typora","C:\Program Files (x86)\Typora\Typora.exe")
         return
     :*:gg\::
         ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
@@ -328,6 +332,26 @@ $Esc::
     IME_SET(0)
     send,{Esc} 
     return
+Alt & j:: 
+    loop 13 {
+        send,{down}
+    }
+    return 
+Alt & k:: 
+    loop 13 {
+        send,{up}
+    }
+    return
+Alt & h:: 
+    loop 13 {
+        send,{left}
+    }
+    return
+Alt & l:: 
+    loop 13 {
+        send,{right}
+    }
+    return
 #IfWinActive
 
 ;############### vscode ##################
@@ -376,8 +400,11 @@ return
 		run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索
 		run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
         return
-    :*:d\:: 
+    :*:di\:: 
         run https://www.baidu.com/s?word=%clipboard% 
+        return 
+    :*:2\:: 
+        run https://www.baidu.com/
         return 
     :*:l\:: ;;chrome历史记录
         ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
@@ -394,8 +421,11 @@ return
         Run https://dict.youdao.com/search?q=%E5%A4%A7%E4%BA%8E&keyfrom=new-fanyi.smartResult
         return
     
-    :*:s\:: ;google网站
+    :*:si\:: ;google网站
         Run https://www.google.com/search?q=%clipboard%
+        return
+    :*:s\:: ;google网站
+        Run https://www.google.com/
         return
     :*:ge\:: ;gitee网站
         Run https://gitee.com/
