@@ -17,13 +17,14 @@ sudo service rpcbind restart
 
 #验证安装是否正确
 #在/opt/4412/rootfs下创建一个空文件
-cd /opt/4412/rootfs
-touch test
+sudo touch /opt/4412/rootfs/test
 sudo  mount 127.0.0.1:/opt/4412/rootfs   /mnt
 #127.0.0.1（这是被挂目录的主机IP）     
 #ubuntu上NFS服务器上被挂目录的绝对路径/opt/4412/rootfs
 #/mnt（挂载的目的地）
 
-ls -l /mnt #如果有test的话就说明ok了
-#sudo rm /mnt/test
-#sudo umount /mnt #卸掉挂载的目录
+ls -l /mnt 
+
+echo "如果有test的话就说明ok了"
+echo "#sudo rm /mnt/test"
+echo "#sudo umount /mnt #卸掉挂载的目录"
