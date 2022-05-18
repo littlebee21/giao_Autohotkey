@@ -4,4 +4,5 @@ vim_plugfile="/mount/vimgao2.tar"
 
 sudo apt install vim
 
-sudo tar xvf $(vim_plugfile) -C ~
+#sudo tar xvf $(vim_plugfile) -C ~/
+

@@ -236,3 +236,12 @@ AnyTXT_cmd(cmd)
         cmd = C: && cd %app% && atgui /d F:\ /e .cpp /s main
         Run,%ComSpec% /c %cmd%
         return
+
+!p::   ;设置ctrl的展开和折叠的按键
+    send, ^a
+    send, {ctrl down}{k}
+    sleep 100
+    send, {ctrl down}
+    sleep 1000
+    send, {ctrl up}
+    return 

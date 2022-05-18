@@ -109,13 +109,7 @@ return
 +!n:: send ^n
 +!t:: send ^t
 
-!f::  ;对查找ctrl+f进行修改
-    ;第一次查找
-    send ^+f
-    ;sleep 500
-    ;send ^v
-    ;send {enter}
-    return
+
 
 ;####### 打开应用 ####################
 ;快速打开和激活程序
@@ -270,6 +264,13 @@ Alt & k:: MouseMove, 0, 30, 0, R ;鼠标向下移动10
 ;Alt 1 激活onetab
 ;Alt 2 激活search all tabs
 ;Alt z 激活smart toc
+!f::  ;对查找ctrl+f进行修改
+    ;第一次查找
+    send ^+f
+    ;sleep 500
+    ;send ^v
+    ;send {enter}
+    return
 
 ;新型腹泻方式的搜索
 Alt & enter::
@@ -356,17 +357,28 @@ Alt & l::
 
 ;############### vscode ##################
 #IfWinActive ahk_exe Code.exe
-!p::   ;设置ctrl的展开和折叠的按键
-    send, ^a
-    send, {ctrl down}{k}
-    sleep 100
-    send, {ctrl down}
-    sleep 1000
-    send, {ctrl up}
+!p::
+    send ^b
     return 
 #e:: ;进行页面内部的分屏
     send ^\
     return
+!f::  ;对查找ctrl+f进行修改
+    ;第一次查找
+    send ^+f
+    MouseMove, 153, 145 ;鼠标移动到输入位置
+    sleep 100
+    Click
+    ;send ^v
+    ;send {enter}
+    return
+!o::    ;光标移动到输入框
+    MouseMove, 142,68 ;鼠标移动到输入位置
+    Click 2
+    return 
+!i::
+    send ^+e ;打开任务栏
+    return 
 #IfWinActive
 
 
