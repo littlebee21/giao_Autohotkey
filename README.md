@@ -1,14 +1,23 @@
-autohotkey
+.
+├── IME.ahk
+├── README.md
+├── Vagrantfile
+├── change_apt_mirror.sh
+├── git_config.sh
+├── git_new.sh
+├── git_new2.sh
+├── install_IAR.sh 
+├── install_bashrc.sh
+├── install_necessary_apt.sh
+├── install_nfs.sh
+├── install_nvim.sh
+├── install_sys_ubuntu18.sh
+├── install_sys_ubuntu20.sh
+├── install_tftp.sh
+├── install_vim.sh
+├── install_vim_plug.sh
+├── myhotkey 备用.txt
+├── myhotkey.ahk
+└── system_plat.sh
 
-为提高软件的使效率
-对图形界面操作进行封装的代码实现
-
-
-收藏：
-
-1. centos7开发环境搭建
-   https://github.com/cicadasmile/linux-system-base
-2. 使用QEMU搭建U-boot+linux+NFS开发环境
-   https://github.com/ratel-deng/QEMU
-3. vagrantfile虚拟机开发环境大全
-   https://github.com/adlawson/vagrantfiles
+0 directories, 20 files

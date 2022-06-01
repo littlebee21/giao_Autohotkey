@@ -36,9 +36,20 @@ Alt & x::
     MouseClick,WheelDown,,,1,0,D,R
     return
 
+;所有的缩写
 ;插入修改的时间戳
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 :*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
+:*:gao'::C:/Users/gao
+:*:siwei'::F:/all/note/siwei/
+:*:codehub'::F:/codehub/
+:*:share'::F:/share/
+:*:giao'::F:/share/giaoAutohotkey/
+
+:*:ygao'::D:/gao
+
+
+
 
 
 ;全局按键
