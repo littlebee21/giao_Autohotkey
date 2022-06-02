@@ -1,4 +1,3 @@
-
 sudo /home/openbmc/qemu/build/arm-softmmu/qemu-system-arm -m 256 \
 	-M palmetto-bmc -nographic -drive \
 	file=/home/openbmc/openbmc/build/tmp/deploy/images/palmetto/obmc-phosphor-image-palmetto.static.mtd,format=raw,\

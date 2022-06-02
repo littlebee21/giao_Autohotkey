@@ -1,3 +1,4 @@
+#cd build
 sudo qemu-system-arm -m 256 \
 	-M romulus-bmc -nographic -drive \
 	file=./tmp/deploy/images/romulus/obmc-phosphor-image-romulus.static.mtd,format=raw,\
