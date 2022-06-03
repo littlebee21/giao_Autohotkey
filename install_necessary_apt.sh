@@ -18,6 +18,9 @@ sudo apt -y install cmake
 sudo apt -y install gcc
 #sudo apt -y install python3.6
 sudo apt -y install python3-dev
+sudo apt -y install fzf
+
+sudo apt -y install python-is-python3
 #sudo apt -y install jdk
 #node
 
@@ -25,6 +28,7 @@ sudo apt -y install python3-dev
 #mysql
 #redis
 #nginx
+sudo ln -s /usr/bin/python3 /usr/bin/python
 
 # 交叉编译工具
 #sudo apt -y install gcc-arm-linux-gnueabi

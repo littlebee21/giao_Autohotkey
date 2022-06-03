@@ -41,6 +41,7 @@ Alt & x::
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 :*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
 :*:130'::192.168.0.130
+:*:gp'::|grep
 
 ;windows的快捷键
 ;笔记本windows路径
@@ -50,6 +51,8 @@ Alt & x::
 :*:share'::/mnt/f/share/
 :*:giao'::/mnt/f/share/giaoAutohotkey/
 :*:comp'::/mnt/f/share/mycomputer/
+:*:baiy'::/mnt/f/BaiduNetdiskDownload/
+
 
 ;域固windows路径
 :*:ygao'::/mnt/d/gao/
