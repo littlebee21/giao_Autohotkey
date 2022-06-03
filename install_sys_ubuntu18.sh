@@ -1,7 +1,4 @@
 #!/bin/bash
-FLAG_CHAR = "y"
-MOUNT_DIR = "/mount"   #挂载目录
-
 
 #备份/etc/apt/ 
 sudo cp /etc/apt/sources.list  /etc/apt/sources_backup.list 
@@ -26,18 +23,12 @@ fi
 sudo apt update
 
 # 安装树形
-sudo apt install tree
-sudo apt install git
-sudo apt install ifconfig
-sudo apt install ssh
-sudo apt install vim
+sudo apt -y --force-yes install tree git ifconfig ssh vim \
 #sudo apt install spacevim
 #sudo apt install curl
 
 #语言和工具
-sudo apt install g++
-sudo apt install make
-sudo apt install gcc
+g++  make  gcc 
 #sudo apt install python3.6
 #sudo apt install jdk
 #node
