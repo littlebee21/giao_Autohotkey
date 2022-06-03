@@ -23,12 +23,12 @@ fi
 sudo apt update
 
 # 安装树形
-sudo apt -y --force-yes install tree git ifconfig ssh vim \
+sudo apt -y --force-yes install tree git ifconfig ssh vim
 #sudo apt install spacevim
 #sudo apt install curl
 
 #语言和工具
-g++  make  gcc 
+#g++  make  gcc 
 #sudo apt install python3.6
 #sudo apt install jdk
 #node
