@@ -40,6 +40,7 @@ Alt & x::
 ;插入修改的时间戳
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 :*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
+:*:130'::192.168.0.130
 
 ;windows的快捷键
 ;笔记本windows路径
