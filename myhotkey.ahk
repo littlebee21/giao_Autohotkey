@@ -40,28 +40,33 @@ Alt & x::
 ;插入修改的时间戳
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 :*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
-:*:130'::192.168.0.130
-:*:gp'::|grep
+:*:130,::192.168.0.130
+:*:gp,::|grep
+
+;正则表达式
+:*:zhongwen,::(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)
+:*:konghang,::^\s*(?=\r?$)\n
+
 
 ;windows的快捷键
 ;笔记本windows路径
-:*:gao'::/mnt/f/Users/gao/
-:*:siwei'::/mnt/f/all/note/siwei/
-:*:codehub'::/mnt/f/codehub/
-:*:share'::/mnt/f/share/
-:*:giao'::/mnt/f/share/giaoAutohotkey/
-:*:comp'::/mnt/f/share/mycomputer/
-:*:baiy'::/mnt/f/BaiduNetdiskDownload/
+:*:gao,::/mnt/f/Users/gao/
+:*:siwei,::/mnt/f/all/note/siwei/
+:*:codehub,::/mnt/f/codehub/
+:*:share,::/mnt/f/share/
+:*:giao,::/mnt/f/share/giaoAutohotkey/
+:*:comp,::/mnt/f/share/mycomputer/
+:*:baiy,::/mnt/f/BaiduNetdiskDownload/
 
 
 ;域固windows路径
-:*:ygao'::/mnt/d/gao/
-:*:ygiao'::/mnt/d/gao/share/giaoAutohotkey/
-:*:yshare'::/mnt/d/gao/share/mycomputer/
+:*:ygao,::/mnt/d/gao/
+:*:ygiao,::/mnt/d/gao/share/giaoAutohotkey/
+:*:yshare,::/mnt/d/gao/share/mycomputer/
 
 ;虚拟机路径
-:*:vg'::/work_mount/giaoAutohotkey/
-:*:vs'::/work_mount/
+:*:vg,::/work_mount/giaoAutohotkey/
+:*:vs,::/work_mount/
 
 
 

@@ -7,5 +7,9 @@ sudo apt-get install -y gawk wget git-core git diffstat unzip texinfo gcc-multil
 sudo apt -y install git python3-distutils gcc g++ make file wget \
     gawk diffstat bzip2 cpio chrpath zstd lz4 bzip2
 
+
 #克隆
 git clone git@github.com:openbmc/openbmc.git
+
+
+#在内部的脚本会有对应内容的路径不对,将绝对的路径改添加 poky
