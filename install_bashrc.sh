@@ -9,7 +9,7 @@ cat mybashrc >> ~/.bashrc
 
 
 
-sudo source ~/.bashrc
+source ~/.bashrc
 
 echo "source success"
 
