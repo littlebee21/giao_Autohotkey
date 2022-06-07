@@ -68,7 +68,8 @@ Alt & x::
 :*:vg,::/work_mount/giaoAutohotkey/
 :*:vs,::/work_mount/
 
-
+:*:proxy,::export all_proxy=socks5://127.0.0.1:7890
+:*:unproxy,::unset all_proxy
 
 ;全局按键
 ;alt + 3 进行快速截图

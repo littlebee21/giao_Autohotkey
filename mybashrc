@@ -4,6 +4,10 @@ alias hisf='$(fc -l -n|fzf)'
 alias lf=' du -h --max-depth=1 ./'
 alias lsg='ls|grep'
 
+
+alias 'proxy'='export all_proxy=socks5://127.0.0.1:7891' 
+alias 'unproxy'='unset all_proxy' 
+
 function cf(){
 	#vim "$(locate -i -e $1 |fzf --preview 'cat {}')"
 	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
