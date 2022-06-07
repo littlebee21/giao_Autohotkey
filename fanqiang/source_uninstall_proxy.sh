@@ -1,4 +1,3 @@
-set -x
 
 unset all_proxy
 unset http_proxy
