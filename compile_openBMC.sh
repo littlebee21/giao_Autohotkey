@@ -1,1 +1,1 @@
-time bitbake obmc-phosphor-image
+time bitbake -k obmc-phosphor-image

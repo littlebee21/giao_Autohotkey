@@ -10,10 +10,10 @@ function cf(){
 	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
 }
 function bf(){
-	bash "$(fdfind $1 |fzf --preview 'cat {}')"
+	bash "$(fdfind /work_mount/giaoAutohotkey/  $1 |fzf --preview 'cat {}')"
 }
 function sf(){
-	source "$(fdfind  $1 |fzf --preview 'cat {}')"
+	source "$(fdfind  /work_mount/giaoAutohotkey/ $1 |fzf --preview 'cat {}')"
 }
 
 function mf(){
