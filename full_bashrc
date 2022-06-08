@@ -116,32 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias tr='tree'
-alias hisf='$(fc -l -n|fzf)'
-alias lf=' du -h --max-depth=1 ./'
-alias lsg='ls|grep'
-
-
-
-function cf(){
-	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
-}
-function bf(){
-	bash "$(fdfind -t d $1 |fzf --preview 'cat {}')"
-}
-function sf(){
-	source "$(fdfind -t d $1 |fzf --preview 'cat {}')"
-}
-
-function mf(){
-	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
-	make
-	cd -
-}
-function f(){
-	#vim "$(fzf)"
-	vim "$(fdfind $1 |fzf --preview 'cat {}')"
-}
 
 alias tr='tree'
 alias hisf='$(fc -l -n|fzf)'
@@ -152,6 +126,9 @@ alias lsg='ls|grep'
 
 function cf(){
 	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
+}
+function vgf(){
+	vim "$(find /work_mount/giaoAutohotkey/  $1 |fzf --preview 'cat {}')"
 }
 
 function bf(){
@@ -166,7 +143,10 @@ function mf(){
 	make
 	cd -
 }
-function f(){
+function vf(){
 	#vim "$(fzf)"
 	vim "$(fdfind $1 |fzf --preview 'cat {}')"
+}
+function f(){
+	fzf --preview 'cat {}'
 }

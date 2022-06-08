@@ -5,9 +5,7 @@ set -e
 
 cp ~/.bashrc ~/.bashrc_back
 
-cat mybashrc >> ~/.bashrc
-
-
+sudo cp ./full_bashrc ~/.bashrc
 
 source ~/.bashrc
 
