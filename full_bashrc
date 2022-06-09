@@ -123,7 +123,6 @@ alias lf=' du -h --max-depth=1 ./'
 alias lsg='ls|grep'
 
 
-
 function cf(){
 	cd "$(fdfind -t d $1 |fzf --preview 'cat {}')"
 }

@@ -245,3 +245,10 @@ AnyTXT_cmd(cmd)
     sleep 1000
     send, {ctrl up}
     return 
+
+
+;对于ctrl快捷键的修改
++!a:: send ^a
++!d:: send ^d
++!n:: send ^n
++!t:: send ^t
