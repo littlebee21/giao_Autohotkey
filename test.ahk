@@ -1,36 +1,8 @@
-
-
-;############### Chrome #############
-#IfWinActive ahk_exe chrome.exe
-Alt & j:: MouseMove, -180, 0, 0, R ;鼠标向左移动10
-Alt & l:: MouseMove, 180, 0, 0, R ;鼠标向右移动10
-Alt & i:: MouseMove, 0, -30, 0, R ;鼠标向上移动10
-Alt & k:: MouseMove, 0, 30, 0, R ;鼠标向下移动10
-!b:: ;跳转到书签位置
-    MouseMove, 302, 198 ;鼠标移动到输入位置
-    Click
-    return
-!o:: ;跳转到历史位置
-    MouseMove, 186, 223 ;鼠标移动到输入位置
-    Click
-    return
-;Alt 1 激活onetab
-;Alt 2 激活search all tabs
-;Alt z 激活smart toc
-!f::  ;对查找ctrl+f进行修改
-    ;第一次查找
-    send ^+f
-    ;sleep 500
-    ;send ^v
-    ;send {enter}
-    return
-
-;新型腹泻方式的搜索
-Alt & enter::
-    send ^a
-    send ^c
+;####################### 测试代码 #########################
+;腹泻式的检索
+!m:: ;谷歌搜索终极版
     run https://www.baidu.com/sf/vsearch?oq=%clipboard% ;视频搜索
-    run https://baike.baidu.com/item/%clipboard% ;百度百科搜索
+    ;run https://baike.baidu.com/item/%clipboard% ;百度百科搜索
     run https://so.csdn.net/so/search?q=%clipboard% ;csdn
     run https://www.runoob.com/?s=%clipboard% ;菜鸟教程搜索
     run https://github.com/search?q=%clipboard%&type=code ;代码搜索
@@ -49,5 +21,11 @@ Alt & enter::
 	run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索
 	run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
     run https://zhidao.baidu.com/search?word=%clipboard%        ;1,百度知道搜索
+    run https://github.com/littlebee21/siwei/search?p=%clipboard%   ;0 个人github查找
     return
-#IfWinActive
+
+
+!v::
+MouseGetPos, xpos, ypos 
+MsgBox, The cursor is at X%xpos% Y%ypos%.
+return

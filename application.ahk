@@ -100,7 +100,7 @@
         ActivateAndOpen("Cloud MUsic","C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe")
         return
 
-        
+
 
 ;################ everthing #############
 #IfWinActive ahk_exe Everything.exe
@@ -158,7 +158,6 @@
     send ^+e ;打开任务栏
     return 
 #IfWinActive
-
 
 
 ;################ ATGUI #################

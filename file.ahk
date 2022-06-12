@@ -8,11 +8,4 @@
         Run,%code% "%file%"
         return
 
-    :*:\b:: ;cmder bash打开对应文件内容
-        send ^c
-        ;ActivateAndOpen("TOE9G11","F:\software\cmder_mini\vendor\conemu-maximus5\ConEmu64.exe")
-        clipboard = %clipboard%
-        ;StringReplace, Clipboard, Clipboard, `\, /, All
-        sleep 500
-        send {ctrl}{insert}
-        return
+ 

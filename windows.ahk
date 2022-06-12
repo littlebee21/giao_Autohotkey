@@ -24,6 +24,7 @@
     WinMinimize ,A 
     return
 
+
 #q:: ;alt + F4关闭当前应用
    send, {alt down}{f4}
     sleep 50

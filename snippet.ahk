@@ -1,33 +1,29 @@
 ;所有的缩写
 ;插入修改的时间戳
-!'::send  //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
-:*:pr\::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
+!'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
+
+:*:pr,::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
 :*:130,::192.168.1.130
-:*:gp,::|grep
 
 ;正则表达式
 :*:zhongwen,::(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)
 :*:konghang,::^\s*(?=\r?$)\n
 
-
-;windows的快捷键
-;笔记本windows路径
+;windows的 wsl的快捷键
 :*:gao,::/mnt/f/Users/gao/
-:*:siwei,::/mnt/f/all/note/siwei/
-:*:codehub,::/mnt/f/codehub/
-:*:share,::/mnt/f/share/
-:*:giao,::/mnt/f/share/giaoAutohotkey/
-:*:comp,::/mnt/f/share/mycomputer/
-:*:baiy,::/mnt/f/BaiduNetdiskDownload/
+:*:wc,::/mnt/f/codehub/
+:*:ws,::/mnt/f/share/
+:*:wg,::/mnt/f/share/gshell/
+:*:wbai,::/mnt/f/BaiduNetdiskDownload/
 
 
 ;域固windows路径
 :*:ygao,::/mnt/d/gao/
-:*:ygiao,::/mnt/d/gao/share/giaoAutohotkey/
-:*:yshare,::/mnt/d/gao/share/mycomputer/
+:*:yg,::/mnt/d/gao/share/gshell/
+:*:ys,::/mnt/d/gao/share/
 
 ;虚拟机路径
-:*:vg,::/work_mount/giaoAutohotkey/
+:*:vg,::/work_mount/gshell/
 :*:vs,::/work_mount/
 
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
@@ -47,3 +43,33 @@
         `n`n`n`n
     ), F:\all\note\daylog\log-%A_YYYY%-%A_MM%-%A_DD%.md,UTF-8
 return
+
+;autohotkey命令
+
+
+;linux命令
+;vim下的命令
+
+:*:tr,::tree
+:*:hisf,::
+	send, {raw}$(fc -l -n|fzf)
+	return 
+:*:gp,::Grep
+:*:nl,::nohl
+:*:fl,::Files
+:*:th,::%s/a/b/g
+:*:sl,::
+    send,{raw}!command
+    return 
+:*:lf,::
+	send, {raw}'du -h --max-depth=1 ./'
+	return 
+
+
+:*:vf,::
+    send, {raw}vim ${FP}
+    return
+:*:cf,::
+    send, {raw}cd ${FP}
+    return
+;function
