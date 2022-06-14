@@ -9,12 +9,19 @@
 :*:zhongwen,::(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)
 :*:konghang,::^\s*(?=\r?$)\n
 
-;windows的 wsl的快捷键
-:*:gao,::/mnt/f/Users/gao/
-:*:wc,::/mnt/f/codehub/
-:*:ws,::/mnt/f/share/
-:*:wg,::/mnt/f/share/gshell/
+;powershell的命令,要在管理员模式下进行打开
+:*:cfhq,::Set-NetFirewallProfile -Enabled False
+:*:ofhq,::NetSh Advfirewall set allprofiles state on
+
+
+;windows的wsl的快捷键
+:*:gao,::/mnt/d/Users/gao/
+:*:wc,::/mnt/d/codehub/
+:*:ws,::/mnt/d/share/
+:*:wg,::/mnt/d/share/gshell/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
+
+:*:wcs,::F: && cd F:/share/mycomputer/openbmc_20
 
 
 ;域固windows路径
@@ -23,9 +30,12 @@
 :*:ys,::/mnt/d/gao/share/
 
 ;虚拟机路径
-:*:vg,::/work_mount/gshell/
-:*:vs,::/work_mount/
+:*:vg,::~/work_mount/gshell/
+:*:vs,::~/work_mount/
+:*:vw,::~/openbmc/build/workspace/sources/
+:*:vm,::sudo /sbin/mount.vboxsf work_mount ~/work_mount/
 
+:*:127,::127.0.0.1
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy
 

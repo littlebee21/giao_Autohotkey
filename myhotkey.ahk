@@ -47,3 +47,6 @@ $^l::    ;删除当前行
     copy()
     return 
 
+
+!.::send #3   ;激活mobax
+
