@@ -3,15 +3,24 @@
 !'::send //gao%A_YYYY%-%A_MM%%A_DD%-%A_Hour%
 
 :*:pr,::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
-:*:130,::192.168.1.130
+:*:31130,::192.168.31.130
+:*:127,::127.0.0.1
+:*:0130,::192.168.0.130
+
 
 ;正则表达式
 :*:zhongwen,::(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)
 :*:konghang,::^\s*(?=\r?$)\n
 
-;powershell的命令,要在管理员模式下进行打开
-:*:cfhq,::Set-NetFirewallProfile -Enabled False
-:*:ofhq,::NetSh Advfirewall set allprofiles state on
+
+
+;前端
+:*:ngs,::ng serve --open --host 192.168.0.130
+
+;openbmc
+:*:exportbmc1,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf 
+:*:exportbmc2,::. openbmc-env
+:*:bitbakebmc,:: bitbake obmc-phosphor-image
 
 
 ;windows的wsl的快捷键
@@ -30,12 +39,14 @@
 :*:ys,::/mnt/d/gao/share/
 
 ;虚拟机路径
-:*:vg,::~/work_mount/gshell/
 :*:vs,::~/work_mount/
-:*:vw,::~/openbmc/build/workspace/sources/
+:*:vg,::~/work_mount/gshell/
+:*:vgf,::~/work_mount/gshell/fanqiang/
+:*:vp,::~/work_mount/project/
+:*:vws,::~/openbmc/build/workspace/sources/
+
 :*:vm,::sudo /sbin/mount.vboxsf work_mount ~/work_mount/
 
-:*:127,::127.0.0.1
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy
 
@@ -58,16 +69,14 @@ return
 
 
 ;linux命令
-;vim下的命令
-
-:*:tr,::tree
+:*:tr1,::tree -L 1
+:*:tr2,::tree -L 2
+:*:tr3,::tree -L 3 
+:*:ncheck,::–no-check-certificate
 :*:hisf,::
 	send, {raw}$(fc -l -n|fzf)
-	return 
-:*:gp,::Grep
-:*:nl,::nohl
-:*:fl,::Files
-:*:th,::%s/a/b/g
+	return
+
 :*:sl,::
     send,{raw}!command
     return 
@@ -76,10 +85,30 @@ return
 	return 
 
 
-:*:vf,::
+:*:vim ,::
     send, {raw}vim ${FP}
     return
-:*:cf,::
+:*:cd ,::
     send, {raw}cd ${FP}
     return
+
+
+
+;vim下的命令
+:*:gp,::Grep
+:*:nl,::nohl
+:*:fl,::Files
+:*:th,::%s/a/b/g
+
+
+
 ;function
+
+
+;powershell命令
+:*:sfhq,::Set-NetFirewallProfile -Enabled False
+:*:rfhq,::NetSh Advfirewall set allprofiles state on
+:*:swfhq,::ufw disable
+
+:*:rdk,::iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+:*:gdk,::netstat -ntlp

@@ -48,5 +48,28 @@ $^l::    ;删除当前行
     return 
 
 
-!.::send #3   ;激活mobax
+!.::  ;打开对应moba进行搜索
+    send ^b
+    sleep 100
+    send c
+    send {f}
+    send {space}
+    return 
+
+!=::
+    copy = fuck
+    MsgBox %copy%
+    send %copy%
+    return
+
+
+
+
+
+
+
+
+    
+    
+
 

@@ -70,4 +70,28 @@ Alt & l::
         send,{right}
     }
     return
+
+;tmux相关的快捷按键
+^n::   ;新建tmux的终端
+    send ^b
+    sleep 100
+    send c
+    return 
+^w::    ;关闭当前的终端
+    send ^b
+    sleep 100
+    send &
+    sleep 100
+    send y
+    return
+^j::    ;切换页面前
+    send ^b
+    sleep 100
+    send p
+    return
+^k::    ;切换页面后
+    send ^b
+    sleep 100
+    send n
+    return
 #IfWinActive
