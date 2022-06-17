@@ -4,6 +4,9 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 
 #include snippet.ahk   ;快捷键工具
+#include route.ahk
+#include linux.ahk
+#include git.ahk
 
 #include application.ahk
 #include chrome.ahk   
