@@ -261,3 +261,65 @@ $^x::    ;对当前行进行剪切，只有在编辑的过程中才进行剪切�
     send, {shift up}
     send, ^x
     return 
+
+$Esc::  
+    ;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘
+    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
+    IME_SET(0)
+    send,{Esc} 
+    return
+Alt & j:: 
+    loop 13 {
+        send,{down}
+    }
+    return 
+Alt & k:: 
+    loop 13 {
+        send,{up}
+    }
+    return
+Alt & h:: 
+    loop 13 {
+        send,{left}
+    }
+    return
+Alt & l:: 
+    loop 13 {
+        send,{right}
+    }
+    return
+
+
+!n:: ;保存复制内容到笔记
+    send ^c
+    FileAppend,
+    (
+        ``````
+        ---------%A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min% begin ---------
+        %clipboard%
+    ---------%A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min% end -----------
+        `n`n`n`n
+    ), F:\all\note\daylog\log-%A_YYYY%-%A_MM%-%A_DD%.md,UTF-8
+return
+
+
+
+
+Alt & m::
+    loop 13 {
+        send,{up}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+Alt & n::
+    loop 13 {
+        send,{down}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+
+
+;反冲突的界面
+#IfWinNotActive ahk_class Xshell7::MainFrame_0
+#IfWinNotActive
+

@@ -55,18 +55,28 @@
     return
     }
     
-
+    ;最常用且通用的三个切换工具是。
     :*:c\::
         ActivateAndOpen("Code","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
         return
+    :*:s\::
+        ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
+        return
+    :*:x\::
+        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
+        return
+
+    !,::
+        ActivateAndOpen("Everything","F:\software\Everything-1.4.1.1005.x64\Everything.exe")
+        MouseMove, 541, 62
+        Click
+        return
+
     :*:t\::
         ActivateAndOpen("TIM","C:\Program Files (x86)\Tencent\TIM\Bin\TIM.exe")
         return
     :*:md\::
         ActivateAndOpen("Typora","C:\Program Files (x86)\Typora\Typora.exe")
-        return
-    :*:gg\::
-        ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
         return
      :*:w\::
         ActivateAndOpen("WPS","C:\Program Files (x86)\Kingsoft\WPS Office\11.8.2.8411\office6\wps.exe")
@@ -101,12 +111,6 @@
         return
 
 
-
-;################ everthing #############
-#IfWinActive ahk_exe Everything.exe
-#IfWinActive
-
-
 ;############### DocFetcher #############
 #IfWinActive ahk_class SWT_Window1
 !o:: 
@@ -132,32 +136,6 @@
 #IfWinActive
 
 
-
-;############### vscode ##################
-#IfWinActive ahk_exe Code.exe
-!p::
-    send ^b
-    return 
-#e:: ;进行页面内部的分屏
-    send ^\
-    return
-!f::  ;对查找ctrl+f进行修改
-    ;第一次查找
-    send ^+f
-    MouseMove, 153, 145 ;鼠标移动到输入位置
-    sleep 100
-    Click
-    ;send ^v
-    ;send {enter}
-    return
-!o::    ;光标移动到输入框
-    MouseMove, 142,68 ;鼠标移动到输入位置
-    Click 2
-    return 
-!i::
-    send ^+e ;打开任务栏
-    return 
-#IfWinActive
 
 
 ;################ ATGUI #################

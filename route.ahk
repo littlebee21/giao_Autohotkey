@@ -15,6 +15,9 @@
 :*:wcs,::F: && cd F:/share/mycomputer/openbmc_20
 
 
+;windows的路径
+:*:siwei,::D:\share\siwei\
+
 
 
 ;域固windows路径
@@ -22,9 +25,12 @@
 :*:yg,::/mnt/d/gao/share/gshell/
 :*:ys,::/mnt/d/gao/share/
 
-;虚拟机路径
+;linux虚拟机路径
 :*:vs,::~/work_mount/
 :*:vg,::~/work_mount/gshell/
 :*:vgf,::~/work_mount/gshell/fanqiang/
 :*:vp,::~/work_mount/project/
+:*:vga,::~/work_mount/giaoAutohotkey/
+
+:*:vt,::~/test/
 :*:vws,::~/openbmc/build/workspace/sources/

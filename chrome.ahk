@@ -2,10 +2,11 @@
 
 ;############### Chrome #############
 #IfWinActive ahk_exe chrome.exe
-Alt & j:: MouseMove, -180, 0, 0, R ;鼠标向左移动10
-Alt & l:: MouseMove, 180, 0, 0, R ;鼠标向右移动10
-Alt & i:: MouseMove, 0, -30, 0, R ;鼠标向上移动10
-Alt & k:: MouseMove, 0, 30, 0, R ;鼠标向下移动10
+;Alt & j:: MouseMove, -180, 0, 0, R ;鼠标向左移动10
+;Alt & l:: MouseMove, 180, 0, 0, R ;鼠标向右移动10、
+;Alt & i:: MouseMove, 0, -30, 0, R ;鼠标向上移动10
+;Alt & k:: MouseMove, 0, 30, 0, R ;鼠标向下移动10
+
 !b:: ;跳转到书签位置
     MouseMove, 302, 198 ;鼠标移动到输入位置
     Click
@@ -23,6 +24,22 @@ Alt & k:: MouseMove, 0, 30, 0, R ;鼠标向下移动10
     ;sleep 500
     ;send ^v
     ;send {enter}
+    return
+
+
+^p:: ^+a    ;进行内容的搜索
+
+LAlt & k::
+    loop 13 {
+        send,{up}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+LAlt & j::
+    loop 13 {
+        send,{down}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
     return
 
 ;新型腹泻方式的搜索

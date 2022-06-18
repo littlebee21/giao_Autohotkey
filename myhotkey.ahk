@@ -9,40 +9,36 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include git.ahk
 
 #include application.ahk
+#include everything.ahk
 #include chrome.ahk   
 #include wps.ahk
+#include vscode.ahk
 
 #include web.ahk
 #include file.ahk
 #include windows.ahk
 #include terminal.ahk
-;#include test.ahk
+#include test.ahk
+
+
+#include log.ahk
 
 ;函数的集合
 #include fuction.ahk
 
-;全局按键的修改
 ;############################ 按键的修改 ################
-Alt & a::send,{left}
-Alt & d::send,{right}
-Alt & w::send,{up}
-Alt & s::send,{down}
-
-Alt & q::send,{home}
-Alt & e::send,{end}
-
 ;快速的移动光标
 Alt & c::
     loop 13 {
         send,{up}
     }
-    MouseClick,WheelUp,,,1,0,D,R
+    ;MouseClick,WheelUp,,,1,0,D,R
     return
 Alt & x::  
     loop 13 {
         send,{down}
     }
-    MouseClick,WheelDown,,,1,0,D,R
+    ;MouseClick,WheelDown,,,1,0,D,R
     return
 
 $^l::    ;删除当前行
@@ -50,22 +46,21 @@ $^l::    ;删除当前行
     copy()
     return 
 
-
-!.::  ;打开对应moba进行搜索
+!.::     ;全文创建搜索框
+    ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
     send ^b
     sleep 100
     send c
-    send {f}
-    send {space}
-    return 
-
-!=::
-    copy = fuck
-    MsgBox %copy%
-    send %copy%
+    send ff{space}
     return
 
+RAlt & s::send,{down}
+RAlt & a::send,{left}
+RAlt & d::send,{right}
+RAlt & w::send,{up}
 
+RAlt & q::send,{home}
+RAlt & e::send,{end}
 
 
 

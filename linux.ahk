@@ -9,6 +9,7 @@
 :*:bitbakebmc,:: bitbake obmc-phosphor-image
 
 ;网络
+:*:ssh,::ssh -p 22 vagrant@
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy
 
