@@ -56,22 +56,7 @@
     }
     
     ;最常用且通用的三个切换工具是。
-    :*:c\::
-        ActivateAndOpen("Code","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
-        return
-    :*:s\::
-        ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
-        return
-    :*:x\::
-        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
-        return
-
-    !,::
-        ActivateAndOpen("Everything","F:\software\Everything-1.4.1.1005.x64\Everything.exe")
-        MouseMove, 541, 62
-        Click
-        return
-
+ 
     :*:t\::
         ActivateAndOpen("TIM","C:\Program Files (x86)\Tencent\TIM\Bin\TIM.exe")
         return

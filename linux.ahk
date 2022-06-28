@@ -20,6 +20,10 @@
 :*:rdk,::iptables -I INPUT -p tcp --dport 8080 -j ACCEPT    ;开放端口
 :*:gdk,::netstat -ntlp
 
+;文件相关
+:*:rms,::
+    send, {raw}rm -rf $(find . -name ".*.swp" -print)
+    return
 
 ;虚拟机相关
 :*:vm,::sudo /sbin/mount.vboxsf work_mount ~/work_mount/
@@ -29,19 +33,27 @@
 :*:tr1,::tree -L 1
 :*:tr2,::tree -L 2
 :*:tr3,::tree -L 3 
+:*:cdh,::cd ~ && ls
+:*:..,::../../
 :*:hisf,::
 	send, {raw}$(fc -l -n|fzf)
 	return
 
+:*:fp,::        
+    send, {raw}${FP}
+    return
 :*:lf,::       ;查看文件夹的大小
 	send, {raw}'du -h --max-depth=1 ./'
 	return 
 
 :*:vim ,::      ;编辑搜索的内容
-    send, {raw}vim ${FP}
+    send, {raw}vim "${FP}"
+    return
+:*:code ,::      ;编辑搜索的内容
+    send, {raw}code "${FP}"
     return
 :*:cd ,::        
-    send, {raw}cd ${FP`%/*}
+    send, {raw}cd "${FP`%/*}" && ls
     return
 
 ;vim下的命令

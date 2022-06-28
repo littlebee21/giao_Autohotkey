@@ -323,3 +323,80 @@ Alt & n::
 #IfWinNotActive ahk_class Xshell7::MainFrame_0
 #IfWinNotActive
 
+myhotkey 备用.txt
+
+
+   :*:c\::
+        ActivateAndOpen("Code","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        return
+    :*:s\::
+        ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
+        return
+    :*:x\::
+        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
+        return
+
+
+
+    :*:\c:: ;使用code打开剪切板的，everything选中的目录
+        code = F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe
+        send ^c
+        sleep 100
+        send ^c
+        file = %clipboard%
+        Run,%code% "%file%"
+        return
+
+!.::     ;全文创建搜索框
+    ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
+    send ^b
+    sleep 100
+    send c
+    send ff{space}
+    return
+
+
+LAlt & k::
+    loop 13 {
+        send,{up}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+LAlt & j::
+    loop 13 {
+        send,{down}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+
+
++!j:: MouseMove, -300, 0, 0, R ;鼠标向左移动10
++!l:: MouseMove, 300, 0, 0, R ;鼠标向右移动10
++!i:: MouseMove, 0, -150, 0, R ;鼠标向上移动10
++!k:: MouseMove, 0, 150, 0, R ;鼠标向下移动10
+
+
+
+!f::  ;对查找ctrl+f进行修改
+    ;第一次查找
+    send ^+f
+    MouseMove, 153, 145 ;鼠标移动到输入位置
+    sleep 100
+    Click
+    ;send ^v
+    ;send {enter}
+    return
+
+
+LAlt & k::
+    loop 13 {
+        send,{up}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+LAlt & j::
+    loop 13 {
+        send,{down}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return

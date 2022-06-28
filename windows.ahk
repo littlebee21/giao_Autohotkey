@@ -39,3 +39,17 @@
     MouseMove, 1200, 0, 0, R ;鼠标向左移动10
     Click
     return
+
+
+!6:: ;todo
+WinGet, id, List,,, Program Manager
+Loop, %id%
+{
+    this_id := id%A_Index%
+    WinGetTitle, this_title, ahk_id %this_id%
+    Gui, Add, Text,,%id%%this_title%
+}
+Gui, Font, norm
+Gui Show
+return
+

@@ -13,3 +13,8 @@
 ;file
 :*:gc,::gaocache.txt
 
+
+
+:*:i18,::
+    send, {raw}{{ $t('') }}
+    return

@@ -33,4 +33,5 @@
 :*:vga,::~/work_mount/giaoAutohotkey/
 
 :*:vt,::~/test/
+:*:vtw,::~/test/webui-vue-dev/
 :*:vws,::~/openbmc/build/workspace/sources/

@@ -29,18 +29,6 @@
 
 ^p:: ^+a    ;进行内容的搜索
 
-LAlt & k::
-    loop 13 {
-        send,{up}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
-    return
-LAlt & j::
-    loop 13 {
-        send,{down}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
-    return
 
 ;新型腹泻方式的搜索
 Alt & enter::

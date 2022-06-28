@@ -1,42 +1,22 @@
 ;############### vscode ##################
 #IfWinActive ahk_exe Code.exe
-
-LAlt & k::
-    loop 13 {
-        send,{up}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
-    return
-LAlt & j::
-    loop 13 {
-        send,{down}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
+$Esc::  
+    ;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘
+    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
+    IME_SET(0)
+    send,{Esc} 
     return
 
+!n::
+    send ^c
+    Run https://www.google.com/search?q=%clipboard%
+    Run https://www.baidu.com/s?word=%clipboard%
+    return
 
-!p::
-    send ^b
-    return 
 #e:: ;进行页面内部的分屏
     send ^\
     return
-!f::  ;对查找ctrl+f进行修改
-    ;第一次查找
-    send ^+f
-    MouseMove, 153, 145 ;鼠标移动到输入位置
-    sleep 100
-    Click
-    ;send ^v
-    ;send {enter}
-    return
-!o::    ;光标移动到输入框
-    MouseMove, 142,68 ;鼠标移动到输入位置
-    Click 2
-    return 
-!i::
-    send ^+e ;打开任务栏
-    return 
+
 #IfWinActive
 
 

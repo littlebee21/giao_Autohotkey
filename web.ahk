@@ -4,9 +4,7 @@
     run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索
     run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
     return
-:*:di\:: 
-    run https://www.baidu.com/s?word=%clipboard% 
-    return 
+
 :*:2\:: 
     run https://www.baidu.com/
     return 
@@ -17,9 +15,6 @@
     Run https://dict.youdao.com/search?q=%E5%A4%A7%E4%BA%8E&keyfrom=new-fanyi.smartResult
     return
 
-:*:si\:: ;google网站
-    Run https://www.google.com/search?q=%clipboard%
-    return
 :*:s\:: ;google网站
     Run https://www.google.com/
     return
