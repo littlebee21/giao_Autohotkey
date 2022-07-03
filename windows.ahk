@@ -3,16 +3,34 @@
 ;默认win+l 锁定屏幕
 ;F11是全屏操作
 
-#j:: ;按下win + k ，将窗口向右侧移动
-    send, {lwin down}{left}
-    sleep 50
-    send, {lwin up}
+#n:: ;左下1/4
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/8),(A_ScreenHeight/2), (A_ScreenWidth/2)-(A_ScreenWidth/8), (A_ScreenHeight/2)-30,,
     return
 
-#k:: ;按下win + j ，将窗口向左侧移动
-    send, {lwin down}{right}
-    sleep 50
-    send, {lwin up}
+#u:: ;左上1/4
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, 0,0, (A_ScreenWidth/2), (A_ScreenHeight/2),,
+    return
+
+#o:: ;右上1/4
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/2),0, (A_ScreenWidth/2), (A_ScreenHeight/2),,
+    return
+
+#m:: ;右下1/4
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/2),(A_ScreenHeight/2), (A_ScreenWidth/2), (A_ScreenHeight/2)-30,,
+    return
+
+#j:: ;左上1/2
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, 0,0, (A_ScreenWidth/2), (A_ScreenHeight),,
+    return
+
+#k:: ;右侧1/2
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/2),0, (A_ScreenWidth/2), (A_ScreenHeight),,
     return
 
 

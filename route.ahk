@@ -6,7 +6,7 @@
 
 
 ;windows的wsl的快捷键
-:*:gao,::/mnt/d/Users/gao/
+:*:wgao,::/mnt/d/Users/gao/
 :*:wc,::/mnt/d/codehub/
 :*:ws,::/mnt/d/share/
 :*:wg,::/mnt/d/share/gshell/
@@ -35,3 +35,8 @@
 :*:vt,::~/test/
 :*:vtw,::~/test/webui-vue-dev/
 :*:vws,::~/openbmc/build/workspace/sources/
+:*:vip,::~/openbmc/meta-ibm/meta-palmetto/
+
+
+
+;everything的使用路径

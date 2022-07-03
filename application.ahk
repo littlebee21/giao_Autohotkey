@@ -56,36 +56,51 @@
     }
     
     ;最常用且通用的三个切换工具是。
- 
-    :*:t\::
+    :*:b\::
+        ActivateAndOpen("bendi","")
+        return
+
+    :*:wechat\::
+        ActivateAndOpen("WeChat","F:\Program Files (x86)\Tencent\WeChat\WeChat.exe")
+        return
+    :*:ray\::
+        ActivateAndOpen("v2ray","D:\software\v2rayN-Core\v2rayN.exe")
+        return
+    :*:box\::
+        ActivateAndOpen("VirtualBox","C:\Program Files\Oracle\VirtualBox\VirtualBox.exe")
+        return
+    :*:tim\::
         ActivateAndOpen("TIM","C:\Program Files (x86)\Tencent\TIM\Bin\TIM.exe")
         return
-    :*:md\::
+    :*:moba\::
+        ActivateAndOpen("Moba","F:\BaiduNetdiskDownload\MobaXterm_Portable_v22.0\MobaXterm_Personal_22.0.exe")
+        return
+    :*:typora\::
         ActivateAndOpen("Typora","C:\Program Files (x86)\Typora\Typora.exe")
         return
-     :*:w\::
+     :*:wps\::
         ActivateAndOpen("WPS","C:\Program Files (x86)\Kingsoft\WPS Office\11.8.2.8411\office6\wps.exe")
         return
-    :*:p\::
+    :*:pdf\::
         ActivateAndOpen("PDF","C:\Users\gao\AppData\Local\SumatraPDF\SumatraPDF.exe")
         return
-    :*:v\::
+    :*:vmw\::
         ActivateAndOpen("VMware Workstation","F:\Program Files (x86)\VMware\VMware Workstation\vmware.exe")
         return
-    :*:dd\::
+    :*:docfet\::
         ActivateAndOpen("DocFetcher","C:\Program Files (x86)\DocFetcher\DocFetcher-4096_64-bit-Java.exe")
         send ^f
         return
-    :*:cp\::
+    :*:winmg\::
         ActivateAndOpen("WinMerge","C:\Program Files (x86)\WinMerge\WinMergeU.exe")
         return
-    :*:q\::
+    :*:qt\::
         ActivateAndOpen("- Qt Creator","F:\Qt\Qt5.14.2\Tools\QtCreator\bin\qtcreator.exe")
         return
     :*:qa\::
         ActivateAndOpen("Qt 助手","/mnt/f/Qt/Qt5.14.2/5.14.2/mingw73_32/bin/assistant.exe")
         return
-    :*:kil\::
+    :*:keil\::
         ActivateAndOpen("μVision4","C:\Keil\UV4\Uv4.exe")
         return
     :*:bwp\::
