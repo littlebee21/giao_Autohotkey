@@ -56,9 +56,8 @@
     }
     
     ;最常用且通用的三个切换工具是。
-    :*:b\::
-        ActivateAndOpen("bendi","")
-        return
+    ;windows+数字键其实是可以高频使用的快捷键，不要将他遗忘
+
 
     :*:wechat\::
         ActivateAndOpen("WeChat","F:\Program Files (x86)\Tencent\WeChat\WeChat.exe")

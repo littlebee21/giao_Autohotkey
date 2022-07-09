@@ -25,12 +25,12 @@
 
 #j:: ;左上1/2
     WinGetActiveTitle, WinTitle
-    WinMove, %WinTitle%,, 0,0, (A_ScreenWidth/2), (A_ScreenHeight),,
+    WinMove, %WinTitle%,, 0,0, (A_ScreenWidth/2), (A_ScreenHeight)-30,,
     return
 
 #k:: ;右侧1/2
     WinGetActiveTitle, WinTitle
-    WinMove, %WinTitle%,, (A_ScreenWidth/2),0, (A_ScreenWidth/2), (A_ScreenHeight),,
+    WinMove, %WinTitle%,, (A_ScreenWidth/2),0, (A_ScreenWidth/2), (A_ScreenHeight)-30,,
     return
 
 

@@ -5,7 +5,9 @@
     return
 
 :*:pr,::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
-
+:*:tm,::
+    send {raw}txt|md
+    return
 
 
 ;正则表达式
@@ -21,3 +23,21 @@
 :*:i18,::
     send, {raw}{{ $t('') }}
     return
+
+:*:time,::
+    a = %A_YYYY%-%A_MM%%A_DD%-%A_Hour%    ;插入的时间戳
+    send %a%
+    return 
+
+
+:*:log,::
+    a = %A_YYYY%-%A_MM%%A_DD%-%A_Hour%    ;插入的时间戳
+    send %a%
+    return
+    
+:*:l,::
+    send {raw}.*
+    return
+
+
+;-Ddata_com_ibm=true  extension:bbappend

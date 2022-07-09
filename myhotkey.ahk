@@ -7,6 +7,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include markdown-snippet.ahk
 #include route.ahk
 #include linux.ahk
+#include linux-fzf.ahk
+#include wsl.ahk
 #include git.ahk
 
 #include application.ahk
@@ -25,7 +27,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 
 
 #include log.ahk
-#include task.ahk
 
 ;函数的集合
 #include fuction.ahk
@@ -44,6 +45,19 @@ Alt & x::
     }
     ;MouseClick,WheelDown,,,1,0,D,R
     return
+Alt & v::
+    loop 5 {
+        send,{right}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+Alt & z::   
+    loop 5 {
+        send,{left}
+    }
+    ;MouseClick,WheelUp,,,1,0,D,R
+    return
+
 
 $^l::    ;删除当前行
     select_line()
@@ -54,6 +68,7 @@ RAlt & s::send,{down}
 RAlt & a::send,{left}
 RAlt & d::send,{right}
 RAlt & w::send,{up}
+
 
 RAlt & q::send,{home}
 RAlt & e::send,{end}

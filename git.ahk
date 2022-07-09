@@ -1,5 +1,6 @@
 ;git命令
 
+;git clone --branch color
 
 ;添加
 :*:gita,::git add . && git commit --no-verify && git push --set-upstream

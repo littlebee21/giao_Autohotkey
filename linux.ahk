@@ -6,7 +6,8 @@
 ;openbmc相关
 :*:exportbmc1,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf 
 :*:exportbmc2,::. openbmc-env
-:*:bitbakebmc,:: bitbake obmc-phosphor-image
+:*:bbmc,:: bitbake obmc-phosphor-image
+:*:ebmc,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env
 
 ;网络
 :*:ssh,::ssh -p 22 vagrant@
@@ -35,26 +36,7 @@
 :*:tr3,::tree -L 3 
 :*:cdh,::cd ~ && ls
 :*:..,::../../
-:*:hisf,::
-	send, {raw}$(fc -l -n|fzf)
-	return
 
-:*:fp,::        
-    send, {raw}${FP}
-    return
-:*:lf,::       ;查看文件夹的大小
-	send, {raw}'du -h --max-depth=1 ./'
-	return 
-
-:*:vim ,::      ;编辑搜索的内容
-    send, {raw}vim "${FP}"
-    return
-:*:code ,::      ;编辑搜索的内容
-    send, {raw}code "${FP}"
-    return
-:*:cd ,::        
-    send, {raw}cd "${FP`%/*}" && ls
-    return
 
 ;vim下的命令
 :*:gp,::Grep
