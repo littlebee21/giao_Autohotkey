@@ -10,7 +10,9 @@
 :*:ebmc,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env
 
 ;网络
-:*:ssh,::ssh -p 22 vagrant@
+:*:bssh,::ssh -p 22 vagrant@
+:*:fssh,::ssh gaozhonglin@192.168.0.203
+
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy
 

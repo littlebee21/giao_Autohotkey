@@ -28,7 +28,7 @@ RAlt & r::   ;控制全局搜索向上
     return
     
 ^'::   ;快速选中当前的函数代码，然后复制到其他的位置
-    send ^l
+    if()
     send {shift down}
     send {down}
     send {shift up}
