@@ -4,6 +4,7 @@
 :*:127,::127.0.0.1
 :*:0130,::192.168.0.130
 :*:0131,::192.168.0.131
+:*:203,::192.168.0.203:5000
 
 
 ;windows的wsl的快捷键
@@ -28,6 +29,7 @@
 ;linux虚拟机路径
 :*:vs,::~/work_mount/
 :*:vw,::~/work_mount/work/
+:*:vd,::~/work_mount/workdoc/
 :*:vg,::~/work_mount/gshell/
 :*:vc,::~/work_mount/caogao/
 :*:vsw,::~/work_mount/siwei/

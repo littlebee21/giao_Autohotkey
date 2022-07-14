@@ -1,7 +1,9 @@
 :*:f ,::
-    send {raw}export FP=$(fzf) \ echo $(FP)
+    send {raw}export FP=$(fzf) && echo ${FP}
     return
-
+:*:ff ,::
+    send {raw}export FP=$(find ~/work_mount/docs |fzf) && echo ${FP}
+    return
 
 :*:hisf,::
 	send, {raw}$(fc -l -n|fzf)
