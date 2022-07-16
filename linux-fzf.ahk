@@ -1,8 +1,11 @@
-:*:f ,::
-    send {raw}export FP=$(fzf) && echo ${FP}
+:*:f,::
+    send {raw}export FP=$(fzf --preview 'cat {}') && echo ${FP}
+    send {enter}
     return
-:*:ff ,::
-    send {raw}export FP=$(find ~/work_mount/docs |fzf) && echo ${FP}
+
+:*:ff,::
+    send {raw}export FP=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FP}
+    send {enter}
     return
 
 :*:hisf,::
@@ -16,10 +19,11 @@
 	send, {raw}'du -h --max-depth=1 ./'
 	return 
 
+
 :*:vim ,::      ;编辑搜索的内容
     send, {raw}vim "${FP}"
     return
-:*:code ,::      ;编辑搜索的内容
+:*:c ,::      ;编辑搜索的内容
     send, {raw}code "${FP}"
     return
 :*:cd ,::        

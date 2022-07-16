@@ -7,22 +7,31 @@ $Esc::
     send,{Esc} 
     return
 
-!n::
+!n::   ;继续内容的搜索
     send ^l
     Run https://www.google.com/search?q=%clipboard%
     Run https://www.baidu.com/s?word=%clipboard%
     return
 
-#e:: ;进行页面内部的分屏
-    send ^\
+;vscode的直接搜索功能
+
+;vscode窗口的变化
+$^j::    ;激活终端窗口，每次都固定激活,
+    send ^j
+    send ^j
+    return
+^i::     ;激活窗口之后的进行搜索联合使用，将两个相近的按键放在一起
+    send {raw}export FP=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FP}
+    send {enter}
     return
 
+;vscode的窗口相关功能
 RAlt & f::   ;控制全局搜索向上
     send {f4}
     return
 
 
-RAlt & r::   ;控制全局搜索向上
+RAlt & r::   ;控制全局搜索向下
     send {shift down}{f4}
     send {shift up}
     return
@@ -35,7 +44,6 @@ RAlt & r::   ;控制全局搜索向上
     return
 
 #IfWinActive
-
 
 
 

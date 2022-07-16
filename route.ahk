@@ -29,10 +29,10 @@
 ;linux虚拟机路径
 :*:vs,::~/work_mount/
 :*:vw,::~/work_mount/work/
-:*:vd,::~/work_mount/workdoc/
+:*:vwd,::~/work_mount/docs/workdoc/
 :*:vg,::~/work_mount/gshell/
 :*:vc,::~/work_mount/caogao/
-:*:vsw,::~/work_mount/siwei/
+:*:vsw,::~/work_mount/docs/siwei/
 :*:vgf,::~/work_mount/gshell/fanqiang/
 :*:va,::~/work_mount/giaoAutohotkey/
 :*:vp,::~/post/
