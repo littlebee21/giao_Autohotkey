@@ -16,7 +16,7 @@
     return
 
 :*:s\:: ;google网站
-    Run https://www.google.com/
+    Run https://www.google.com/search?q=%clipboard%
     return
 :*:ge\:: ;gitee网站
     Run https://gitee.com/

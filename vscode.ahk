@@ -27,7 +27,7 @@ $^j::    ;激活终端窗口，每次都固定激活,
 ^i::     ;激活窗口之后的进行搜索联合使用，将两个相近的按键放在一起
     SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘
     IME_SET(0)
-    send {raw}export FP=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FP}
+    send {raw}export FD=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FD}
     send {enter}
     return
 
