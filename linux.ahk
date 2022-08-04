@@ -49,8 +49,10 @@
     send,{raw}!command
     return 
 
+:*:curlget31,::curl -b cjar -k https://192.168.31.131:2443/
+:*:curlget0,::curl -b cjar -k https://192.168.0.131:2443/
 
+:*:curlpost0,::curl -c cjar -b cjar -k -H "Content-Type: application/json" -X POST https://192.168.0.131:2443/login -d "{\"data\": [ \"root\", \"0penBmc\" ] }"
 
-
-
+:*:curlpost31,::curl -c cjar -b cjar -k -H "Content-Type: application/json" -X POST https://192.168.31.131:2443/login -d "{\"data\": [ \"root\", \"0penBmc\" ] }"
 

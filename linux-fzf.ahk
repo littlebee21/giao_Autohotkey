@@ -35,3 +35,4 @@
     IME_SET(0)
     send, {raw}cd "${FD`%/*}" && ls
     return
+

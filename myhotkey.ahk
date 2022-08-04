@@ -10,6 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include linux-fzf.ahk
 #include wsl.ahk
 #include git.ahk
+#include search.ahk
 
 #include application.ahk
 #include everything.ahk
@@ -23,6 +24,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include terminal.ahk
 #include javascript.ahk
 #include music.ahk
+#include scp.ahk
 ;#include test.ahk
 
 

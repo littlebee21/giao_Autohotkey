@@ -12,8 +12,7 @@ $Esc::
 
 !n::   ;继续内容的搜索
     send ^l
-    Run https://www.google.com/search?q=%clipboard%
-    Run https://www.baidu.com/s?word=%clipboard%
+    Run https://fanyi.baidu.com/
     return
 
 ;vscode的直接搜索功能
