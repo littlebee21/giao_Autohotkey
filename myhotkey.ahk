@@ -5,9 +5,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 
 #include snippet.ahk   ;快捷键工具
 #include markdown-snippet.ahk
-#include route.ahk
-#include linux.ahk
-#include linux-fzf.ahk
+#include %A_ScriptDir%\shortcut\route.ahk
+#include %A_ScriptDir%\shortcut\linux.ahk
+#include %A_ScriptDir%\shortcut\linux-fzf.ahk
+#include %A_ScriptDir%\shortcut\javascript.ahk
+#include %A_ScriptDir%\shortcut\scp.ahk
+
 #include wsl.ahk
 #include git.ahk
 #include search.ahk
@@ -22,11 +25,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include file.ahk
 #include windows.ahk
 #include terminal.ahk
-#include javascript.ahk
 #include music.ahk
-#include scp.ahk
 ;#include test.ahk
-
 
 #include log.ahk
 

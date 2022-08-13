@@ -45,7 +45,11 @@
 :*:vtw,::~/test/webui-vue-dev/
 :*:vob,::~/openbmc/build/
 :*:vws,::~/openbmc/build/workspace/sources/
+:*:vwsw,::~/openbmc/build/workspace/sources/webui-vue/
+:*:vwsb,::~/openbmc/build/workspace/sources/bmcweb/
+
 :*:vip,::~/openbmc/meta-ibm/meta-palmetto/
+:*:vipp,::~/openbmc/meta-ibm/meta-palmetto/recipes-phosphor/
 :*:vwi,::~/openbmc/build/tmp/deploy/images/palmetto
 :*:vwt,::~/openbmc/build/tmp/work/armv5e-openbmc-linux-gnueabi/
 

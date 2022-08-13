@@ -1,5 +1,6 @@
 ;git命令
 
+:*:gitf,::git remote set-url origin git@192.168.0.203:development/webui-vue.git
 ;git clone --branch color
 
 ;添加
