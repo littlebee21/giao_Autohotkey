@@ -33,30 +33,20 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 
 ;############################ 按键的修改 ################
 ;快速的移动光标
-Alt & c::
-    loop 13 {
-        send,{up}
+Alt & c::   moveCursor(13, "up")
+Alt & x::   moveCursor(13, "down")
+Alt & v::   moveCursor(13, "right")
+Alt & z::   moveCursor(13, "left")
+
+moveCursor(step, forward)
+{
+    loop %step% 
+    {
+        send, {%forward%}
     }
     ;MouseClick,WheelUp,,,1,0,D,R
     return
-Alt & x::  
-    loop 13 {
-        send,{down}
-    }
-    ;MouseClick,WheelDown,,,1,0,D,R
-    return
-Alt & v::
-    loop 5 {
-        send,{right}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
-    return
-Alt & z::   
-    loop 5 {
-        send,{left}
-    }
-    ;MouseClick,WheelUp,,,1,0,D,R
-    return
+}
 
 
 $^l::    ;删除当前行
@@ -83,29 +73,15 @@ RAlt & e::send,{end}
 ^!k:: MouseMove, 0, 20, 0, R ;鼠标向下移动10
 
 ^!space::send {click}
-
-+!u:: 
++!u::   MouseMoveScreen(400,200)
++!j::   MouseMoveScreen(400,800)  ;鼠标向左移动10
++!i::   MouseMoveScreen(1000,200)  
++!k::   MouseMoveScreen(1000,800)
++!o::   MouseMoveScreen(1600,200)
++!l::   MouseMoveScreen(1600,800)
+ 
+MouseMoveScreen(xcoor,ycoor){
     CoordMode, Mouse, Screen
-    MouseMove, 400, 200 ;鼠标向左移动10
+    MouseMove, %xcoor%,%ycoor% ;鼠标向右移动10
     return
-+!j:: 
-    CoordMode, Mouse, Screen
-    MouseMove, 400, 800 ;鼠标向左移动10
-    return
-+!i:: 
-    CoordMode, Mouse, Screen
-    MouseMove, 1000,200 ;鼠标向右移动10
-    return
-+!k:: 
-    CoordMode, Mouse, Screen
-    MouseMove, 1000,800 ;鼠标向右移动10
-    return
-+!o:: 
-    CoordMode, Mouse, Screen
-    MouseMove, 1600,200 ;鼠标向右移动10
-    return
-+!l:: 
-    CoordMode, Mouse, Screen
-    MouseMove, 1600,800 ;鼠标向右移动10
-    return
-
+}

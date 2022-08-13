@@ -1,4 +1,4 @@
-#include IME.ahk
+#include %A_ScriptDir%\function\IME.ahk
 
 
 ;############### vscode ##################
