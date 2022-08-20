@@ -1,3 +1,9 @@
+SwitchEng() {
+    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘
+    IME_SET(0)
+    return
+}
+
 GetGUIThreadInfo_hwndActive(WinTitle="A")
 {
 	ControlGet, hwnd, HWND,,, %WinTitle%

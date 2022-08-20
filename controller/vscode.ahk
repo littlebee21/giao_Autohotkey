@@ -1,12 +1,22 @@
 #include %A_ScriptDir%\function\IME.ahk
 
+:*:ck\::    ;切换光标到vscode的编辑页面
+    ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
+    send ^1
+    return
+    
+:*:cm\::    ;切换光标到vscode的命令行页面
+    ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
+    send ^j
+    send ^j
+    return
+
+
 
 ;############### vscode ##################
 #IfWinActive ahk_exe Code.exe
-$Esc::  
-    ;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘
-    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
-    IME_SET(0)
+$Esc::
+    SwitchEng()
     send,{Esc} 
     return
 
@@ -15,40 +25,28 @@ $Esc::
     Run https://fanyi.baidu.com/
     return
 
-;vscode的直接搜索功能
-
-;vscode窗口的变化
-$^j::    ;激活终端窗口，每次都固定激活,
-    send ^j
-    send ^j
+!]::   ;切换到下一个终端
+    send, {ctrl down}{PgDn}
+    send, {ctrl up}
     return
     
-^i::     ;激活窗口之后的进行搜索联合使用，将两个相近的按键放在一起
-    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘
-    IME_SET(0)
-    send {raw}export FD=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FD}
-    send {enter}
+![::   ;切换到下一个终端
+    send, {ctrl down}{PgUp}
+    send, {ctrl up}
     return
 
-;vscode的窗口相关功能
-RAlt & f::   ;控制全局搜索向上
-    send {f4}
-    return
+RAlt & f::   send {f4} ;控制全局搜索向上
+RAlt & r::   shiftF4() ;控制全局搜索向下
+    
+#IfWinActive
 
 
-RAlt & r::   ;控制全局搜索向下
+;################function
+shiftF4(){
     send {shift down}{f4}
     send {shift up}
     return
-    
-^'::   ;快速选中当前的函数代码，然后复制到其他的位置
-    if()
-    send {shift down}
-    send {down}
-    send {shift up}
-    return
-
-#IfWinActive
+}
 
 
 

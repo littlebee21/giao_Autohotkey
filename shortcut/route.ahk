@@ -34,7 +34,7 @@
 :*:vc,::~/work_mount/caogao/
 :*:vsw,::~/work_mount/docs/siwei/
 :*:vgf,::~/work_mount/gshell/fanqiang/
-:*:va,::~/work_mount/giaoAutohotkey/
+:*:vgiao,::~/work_mount/giaoAutohotkey/
 :*:vp,::~/post/
 :*:vwtr,::~/work_mount/docs/workdoc/trouble-sum
 :*:vyf::~/work_mount/docs/workdoc/dev-doc

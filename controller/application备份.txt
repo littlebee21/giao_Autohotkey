@@ -1,0 +1,84 @@
+;application备份
+
+
+:*:adocfet\::
+            ActivateAndOpen("DocFetcher","C:\Program Files (x86)\DocFetcher\DocFetcher-4096_64-bit-Java.exe")
+:*:ayy\::
+            ActivateAndOpen("Cloud MUsic","C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe")
+:*:avmw\::
+            ActivateAndOpen("VMware Workstation","F:\Program Files (x86)\VMware\VMware Workstation\vmware.exe")
+:*:aqt\::
+            ActivateAndOpen("- Qt Creator","F:\Qt\Qt5.14.2\Tools\QtCreator\bin\qtcreator.exe")
+:*:aqa\::
+            ActivateAndOpen("Qt 助手","/mnt/f/Qt/Qt5.14.2/5.14.2/mingw73_32/bin/assistant.exe")
+
+
+/*
+    :*:b/::
+        ActivateAndOpen("MINGW64","C:\Program Files\Git\git-bash.exe")
+        return
+    :*:z/::
+        ActivateAndOpen("资源","C:\Users\gao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk")
+        return
+    :*:csw/::
+        ActivateAndOpen("siwei","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        return
+    :*:cmd/::
+        ActivateAndOpen("命令","C:\Users\gao\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk")
+        return
+*/
+    :*:g/::
+        ActivateAndOpen("Chrome","C:\Program Files\Google\Chrome\Application\chrome.exe")
+        return
+     :*:w/::
+        ActivateAndOpen("WPS","C:\Program Files (x86)\Kingsoft\WPS Office\11.8.2.8411\office6\wps.exe")
+        return
+    :*:p/::
+        ActivateAndOpen("PDF","C:\Users\gao\AppData\Local\SumatraPDF\SumatraPDF.exe")
+        return
+    :*:x/::
+        ActivateAndOpen("Xshell","C:\Program Files (x86)\NetSarang\Xshell 7\Xshell.exe")
+        return
+    :*:v/::
+        ActivateAndOpen("VMware Workstation","F:\Program Files (x86)\VMware\VMware Workstation\vmware.exe")
+        return
+    :*:dd/::
+        ActivateAndOpen("DocFetcher","C:\Program Files (x86)\DocFetcher\DocFetcher-4096_64-bit-Java.exe")
+        send ^f
+        return
+    :*:t/::
+        ActivateAndOpen("tmp","C:\Program Files (x86)\Typora\Typora.exe")
+        return
+    :*:c/::
+        ActivateAndOpen("Code","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        return
+    :*:cp/::
+        ActivateAndOpen("WinMerge","C:\Program Files (x86)\WinMerge\WinMergeU.exe")
+        return
+    :*:q/::
+        ActivateAndOpen("- Qt Creator","F:\Qt\Qt5.14.2\Tools\QtCreator\bin\qtcreator.exe")
+        return
+    :*:ctp/::
+        ActivateAndOpen("tempcode","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        return
+    :*:kil/::
+        ActivateAndOpen("μVision4","C:\Keil\UV4\Uv4.exe")
+        return
+    :*:csh/::
+        ActivateAndOpen("生活","F:\Users\gao\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+        return
+    :*:bwp/::
+        ActivateAndOpen("BaiduNetdisk","C:\Users\gao\AppData\Roaming\Baidu\BaiduNetdisk\BaiduNetdisk.exe")
+        return
+    :*:yyy/::
+        ActivateAndOpen("Cloud MUsic","C:\Program Files (x86)\Netease\CloudMusic\cloudmusic.exe")
+        return
+    :*:frd/::
+        ActivateAndOpen("Foxit","C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\FoxitPDFReader.exe")
+        return
+    :*:dt/::
+        ActivateAndOpen("钉","C:\Program Files (x86)\DingDing\main\current_new\DingTalk.exe")
+        return
+    :*:psh/::
+        ActivateAndOpen("PowerShell","C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe")
+        return

@@ -1,0 +1,8 @@
+vscode备份
+
+
+;vscode窗口的变化
+$^j::    ;激活终端窗口，每次都固定激活,
+    send ^j
+    send ^j
+    return

@@ -2,11 +2,14 @@
 :*:ngs,::ng serve --open --host 192.168.0.130
 :*:ncheck,::–no-check-certificate
 
+:*:bg,::bash ~/work_mount/gshell/
+
 
 ;openbmc相关
 :*:exportbmc1,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf 
 :*:exportbmc2,::. openbmc-env
 :*:bbmc,:: bitbake obmc-phosphor-image
+:*:bmc,:: obmc-phosphor-image
 :*:ebmc,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env
 
 ;网络

@@ -18,10 +18,12 @@
 
 :*:sopenf,::rsync -av -e ssh --exclude='build' ~/openbmc/ gaozhonglin@192.168.0.203:~/openbmc/
 
+:*:shwmonf,::rsync -av  ~/openbmc/build/workspace/sources/phosphor-hwmon/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/phosphor-hwmon/
 
 
 
 ;发送内容到qemu
 :*:svueq,::scp -P 2222 -r ~/openbmc/build/workspace/sources/webui-vue/oe-workdir/image/*  root@192.168.0.131:/
 :*:sbmcwebq,::scp -P 2222 -r ~/openbmc/build/workspace/sources/bmcweb/oe-workdir/image/*  root@192.168.0.131:/
+
 
