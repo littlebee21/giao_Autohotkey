@@ -6,6 +6,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include %A_ScriptDir%\shortcut\markdown-snippet.ahk
 #include %A_ScriptDir%\shortcut\snippet.ahk   ;快捷键工具
 #include %A_ScriptDir%\shortcut\route.ahk
+#include %A_ScriptDir%\shortcut\route-openbmc.ahk
+#include %A_ScriptDir%\shortcut\route-ip.ahk
 #include %A_ScriptDir%\shortcut\linux.ahk
 #include %A_ScriptDir%\shortcut\linux-fzf.ahk
 #include %A_ScriptDir%\shortcut\javascript.ahk
@@ -13,6 +15,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include %A_ScriptDir%\shortcut\git.ahk
 #include %A_ScriptDir%\shortcut\music.ahk
 #include %A_ScriptDir%\shortcut\search.ahk
+#include %A_ScriptDir%\shortcut\shell.ahk
 
 #include %A_ScriptDir%\controller\application.ahk
 #include %A_ScriptDir%\controller\everything.ahk

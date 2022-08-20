@@ -14,6 +14,8 @@
 
 
 ;############### vscode ##################
+;修改默认的vscode按键  
+;面板全屏: alt 、
 #IfWinActive ahk_exe Code.exe
 $Esc::
     SwitchEng()
