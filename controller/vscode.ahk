@@ -1,17 +1,11 @@
 #include %A_ScriptDir%\function\IME.ahk
 
-:*:ck\::    ;切换光标到vscode的编辑页面
-    ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
-    send ^1
-    return
-    
-:*:cm\::    ;切换光标到vscode的命令行页面
+
+:*:cm\::  ;打开vscode窗口
     ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
     send ^j
     send ^j
     return
-
-
 
 ;############### vscode ##################
 ;修改默认的vscode按键  

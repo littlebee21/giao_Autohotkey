@@ -1,0 +1,5 @@
+:*:isfh,::install_static_ip_for_home.sh
+:*:isfw,::install_static_ip_for_work131.sh
+
+
+

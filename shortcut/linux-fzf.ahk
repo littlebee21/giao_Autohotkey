@@ -8,6 +8,11 @@
     send {enter}
     return
 
+:*:fb,::
+    send {raw}export FD=$(find ~/work_mount/gshell/ |fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    return
+
 :*:hisf,::
 	send, {raw}$(fc -l -n|fzf)
 	return
@@ -19,7 +24,11 @@
 	send, {raw}'du -h --max-depth=1 ./'
 	return 
 
-
+:*:b ,::
+    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
+    IME_SET(0)
+    send, {raw}bash "${FD}"
+    return
 :*:vim ,::      ;编辑搜索的内容
     SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
     IME_SET(0)

@@ -1,0 +1,27 @@
+log备份
+
+
+;每小时一个文件
+$^c:: ;保存复制内容到笔记
+    send ^c
+    sleep 1000
+    FileAppend,
+    (
+---------%A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min% begin -------------------
+        %clipboard%
+---------%A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min% end --------------------
+`n`n`n`n
+
+    ), F:\all\note\daylog\log-%A_YYYY%-%A_MM%%A_DD%-%A_Hour%%A_Min%.txt,UTF-8
+return
+
+
+
+!m::
+    GetKeyState, state, ``
+    if state = D
+    {
+        ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
+        send ^j
+        send ^j
+    }
