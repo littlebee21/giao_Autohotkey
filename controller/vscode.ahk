@@ -1,7 +1,12 @@
 #include %A_ScriptDir%\function\IME.ahk
 
 
-:*:cm\::  ;打开vscode窗口
+^\::  ;打开vscode窗口
+    GetKeyState, state, m
+    if state != D
+    {
+        return
+    }
     ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
     send ^j
     send ^j

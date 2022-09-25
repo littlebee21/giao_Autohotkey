@@ -7,6 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include %A_ScriptDir%\shortcut\snippet.ahk   ;快捷键工具
 #include %A_ScriptDir%\shortcut\route.ahk
 #include %A_ScriptDir%\shortcut\route-openbmc.ahk
+#include %A_ScriptDir%\shortcut\route-openbmc-romlus.ahk
 #include %A_ScriptDir%\shortcut\route-ip.ahk
 #include %A_ScriptDir%\shortcut\linux.ahk
 #include %A_ScriptDir%\shortcut\linux-fzf.ahk

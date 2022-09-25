@@ -1,3 +1,4 @@
+;2400的地址
 :*:vob,::~/openbmc/build/
 :*:vws,::~/openbmc/build/workspace/sources/
 
@@ -21,7 +22,6 @@
 :*:gbmcweb,::git@gitee.com:littebee21/mybmcweb.git
 :*:gbmcall,::git@gitee.com:littebee21/openbmc-all.git
 :*:cdoc,::~/work_mount/docs/workdoc/cleandoc
-
-
-
 :*:image,::~/openbmc/build/tmp/deploy/images/palmetto/obmc-phosphor-image-palmetto.static.mtd
+
+
