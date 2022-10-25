@@ -11,14 +11,26 @@
 
 
 
-;发送内容到服务器
-:*:svuef,::rsync -av -e ssh --exclude='node_modules'  ~/openbmc/build/workspace/sources/webui-vue/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/webui-vue/
+;发送内容到2400服务器
+:*:svuefp,::rsync -av -e ssh --exclude='node_modules'  ~/openbmc/build/workspace/sources/webui-vue/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/webui-vue/
 
-:*:sbmcwebf,::rsync -av ~/openbmc/build/workspace/sources/bmcweb/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/bmcweb/
+:*:sbmcwebfp,::rsync -av ~/openbmc/build/workspace/sources/bmcweb/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/bmcweb/
 
-:*:sopenf,::rsync -av -e ssh --exclude='build' ~/openbmc/ gaozhonglin@192.168.0.203:~/openbmc/
+:*:sopenfp,::rsync -av -e ssh --exclude='build' ~/openbmc/ gaozhonglin@192.168.0.203:~/openbmc/
 
-:*:shwmonf,::rsync -av  ~/openbmc/build/workspace/sources/phosphor-hwmon/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/phosphor-hwmon/
+:*:shwmonfp,::rsync -av  ~/openbmc/build/workspace/sources/phosphor-hwmon/ gaozhonglin@192.168.0.203:~/openbmc/build/workspace/sources/phosphor-hwmon/
+
+
+
+
+;发送内容到2400服务器
+:*:svuefl,::rsync -av -e ssh --exclude='node_modules'  ~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/webui-vue/ gaozhonglin@192.168.0.203:~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/webui-vue/
+
+:*:sbmcwebfl,::rsync -av ~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/bmcweb/ gaozhonglin@192.168.0.203:~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/bmcweb/
+
+:*:sopenfl,::rsync -av -e ssh --exclude='build' ~/openbmc-2600/openbmc/ gaozhonglin@192.168.0.203:~/openbmc-2600/openbmc/
+
+:*:shwmonfl,::rsync -av  ~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/phosphor-hwmon/ gaozhonglin@192.168.0.203:~/openbmc-2600/openbmc/build/evb-ast2600/workspace/sources/phosphor-hwmon/
 
 
 

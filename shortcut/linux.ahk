@@ -5,18 +5,10 @@
 :*:bg,::bash ~/work_mount/gshell/
 
 
-;openbmc相关
-:*:exportbmc1,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf 
-:*:exportbmc2,::. openbmc-env
-:*:bbmc,:: bitbake obmc-phosphor-image
-:*:bmc,:: obmc-phosphor-image
-:*:ebmcp,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env
-:*:ebmcr,::export TEMPLATECONF=meta-ibm/meta-romulus/conf  && . openbmc-env
-
-
 ;网络
 :*:bssh,::ssh -p 22 vagrant@
 :*:fssh,::ssh gaozhonglin@192.168.0.203
+:*:cssh,::ssh vagrant@192.168.0.134
 
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy

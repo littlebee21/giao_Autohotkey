@@ -1,12 +1,4 @@
-;windows的wsl的快捷键
-:*:wgao,::/mnt/d/Users/gao/
-:*:ws,::/mnt/d/share/
-:*:wg,::/mnt/d/share/gshell/
-:*:ww,::/mnt/d/share/work/
-:*:wc,::/mnt/d/share/caogao/
-:*:wgf,::/mnt/d/share/gshell/fanqiang/
-:*:wbai,::/mnt/f/BaiduNetdiskDownload/
-:*:wa,::/mnt/d/share/giaoAutohotkey/
+
 
 
 ;windows的路径
@@ -20,6 +12,7 @@
 ;linux虚拟机路径
 :*:vs,::~/work_mount/
 :*:vw,::~/work_mount/work/
+:*:vf,::~/work_mount/docs/file/
 :*:vwd,::~/work_mount/docs/workdoc/
 :*:vg,::~/work_mount/gshell/
 :*:vc,::~/work_mount/caogao/

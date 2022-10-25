@@ -1,0 +1,28 @@
+;global备份
+
+$^l::   select_line()      ;删除当前行
+
+
+
+
+
+
+
+;设置鼠标的移动
+;这样的鼠标只能起到粗略的鼠标的作用，并不不能完全的替代鼠标】
+;细粒度
+^!j:: MouseMove, -20, 0, 0, R ;鼠标向左移动10
+^!l:: MouseMove, 20, 0, 0, R ;鼠标向右移动10
+^!i:: MouseMove, 0, -20, 0, R ;鼠标向上移动10
+^!k:: MouseMove, 0, 20, 0, R ;鼠标向下移动10
+
+^!space::send {click}
++!u::   MouseMoveScreen(400,200)
++!j::   MouseMoveScreen(400,800)  ;鼠标向左移动10
++!i::   MouseMoveScreen(1000,200)  
++!k::   MouseMoveScreen(1000,800)
++!o::   MouseMoveScreen(1600,200)
++!l::   MouseMoveScreen(1600,800)
+
+
+
