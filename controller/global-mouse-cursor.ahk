@@ -1,11 +1,4 @@
-
 ;############################ 按键的修改 ################
-;快速的移动光标
-RAlt & c::   moveCursorAndMouse(13, "up")
-RAlt & x::   moveCursorAndMouse(13, "down")
-RAlt & v::   moveCursorAndMouse(13, "right")
-RAlt & z::   moveCursorAndMouse(13, "left")
-
 RAlt & w::   moveCursorAndMouse(1, "up")
 RAlt & a::   moveCursorAndMouse(1, "left")
 RAlt & s::   moveCursorAndMouse(1, "down")
@@ -64,6 +57,11 @@ moveCursorAndMouse(speed, forward)
             return
         }
         moveMouse(speed, forward)
+        return
+    }
+    If GetKeyState(".","P")
+    {
+        moveCursor(13,forward)
         return
     }
     moveCursor(speed,forward)
