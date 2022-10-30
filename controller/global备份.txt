@@ -26,3 +26,7 @@ $^l::   select_line()      ;删除当前行
 
 
 
+RAlt & s::send,{down}
+RAlt & a::send,{left}
+RAlt & d::send,{right}
+RAlt & w::send,{up}
