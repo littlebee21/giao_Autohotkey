@@ -8,6 +8,7 @@ $^l::   select_line()      ;删除当前行
 
 RAlt & q::send,{home}
 RAlt & e::send,{end}
+F1::Click
 
 ;###########################################################
 moveCursor(step, forward)
@@ -51,7 +52,7 @@ moveCursorAndMouse(speed, forward)
 {
     if % model = "mouse"
     {
-        If GetKeyState(".","P")
+        If GetKeyState("k","P")
         {
             moveMouse(13, forward)
             return
@@ -59,7 +60,7 @@ moveCursorAndMouse(speed, forward)
         moveMouse(speed, forward)
         return
     }
-    If GetKeyState(".","P")
+    If GetKeyState("k","P")
     {
         moveCursor(13,forward)
         return
