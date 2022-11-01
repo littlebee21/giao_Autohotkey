@@ -1,8 +1,13 @@
 ;############################ 按键的修改 ################
-RAlt & w::   moveCursorAndMouse(1, "up")
-RAlt & a::   moveCursorAndMouse(1, "left")
-RAlt & s::   moveCursorAndMouse(1, "down")
-RAlt & d::   moveCursorAndMouse(1, "right")
+LAlt & k::   moveCursorChangeSpeed("up")
+LAlt & h::   moveCursorChangeSpeed("left")
+LAlt & j::   moveCursorChangeSpeed("down")
+LAlt & l::   moveCursorChangeSpeed("right")
+
+RAlt & w::   moveMouseChangeSpeed("up")
+RAlt & a::   moveMouseChangeSpeed("left")
+RAlt & s::   moveMouseChangeSpeed("down")
+RAlt & d::   moveMouseChangeSpeed("right")
 
 $^l::   select_line()      ;删除当前行
 
@@ -11,6 +16,19 @@ RAlt & e::send,{end}
 F1::Click
 
 ;###########################################################
+; 移动光标自动切换速度
+moveCursorChangeSpeed(forward)
+{
+    If GetKeyState("e","P")
+    {
+        moveCursor(13, forward)
+        return
+    }
+    moveCursor(1, forward)
+    return
+}
+
+
 moveCursor(step, forward)
 {
     loop %step% 
@@ -21,6 +39,17 @@ moveCursor(step, forward)
     return
 }
 
+; 移动鼠标自动切换速度
+moveMouseChangeSpeed(forward)
+{
+    If GetKeyState("k","P")
+    {
+        moveMouse(13, forward)
+        return
+    }
+    moveMouse(1, forward)
+    return
+}
 
 moveMouse(step, forward)
 {
