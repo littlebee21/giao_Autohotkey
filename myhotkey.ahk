@@ -33,8 +33,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory
 #include %A_ScriptDir%\controller\log.ahk
 #include %A_ScriptDir%\controller\web.ahk
 #include %A_ScriptDir%\controller\global.ahk
-#include %A_ScriptDir%\controller\global-changeModel.ahk
 #include %A_ScriptDir%\controller\global-mouse-cursor.ahk
+;#include %A_ScriptDir%\controller\global-changeModel.ahk
+
 
 
 ;#include test.ahk

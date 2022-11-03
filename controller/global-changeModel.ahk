@@ -1,7 +1,7 @@
 ;使用alt作为切换状态的按键
 
 ; c鼠标模式
-RAlt & c::
+ RAlt & c::
     global model := "mouse"
     return
 

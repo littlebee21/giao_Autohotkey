@@ -1,35 +1,33 @@
 ;############################ 按键的修改 ################
-RAlt & w::   move("up")
-RAlt & a::   move("left")
-RAlt & s::   move("down")
-RAlt & d::   move("right")
+LAlt & k::   moveCursorChangeSpeed("up")
+LAlt & h::   moveCursorChangeSpeed("left")
+LAlt & j::   moveCursorChangeSpeed("down")
+LAlt & l::   moveCursorChangeSpeed("right")
 
-RAlt & c::   moveCursor(13, "up")
-RAlt & x::   moveCursor(13, "down")
-
+RAlt & w::   moveMouseChangeSpeed("up")
+RAlt & a::   moveMouseChangeSpeed("left")
+RAlt & s::   moveMouseChangeSpeed("down")
+RAlt & d::   moveMouseChangeSpeed("right")
 
 $^l::   select_line()      ;删除当前行
 
-RAlt & q::send,{home}
-RAlt & e::send,{end}
+LAlt & u::send,{home}
+LAlt & o::send,{end}
 F1::Click
 
 ;###########################################################
-move(forward)
+; 移动光标自动切换速度
+moveCursorChangeSpeed(forward)
 {
-    If GetKeyState("l","P")
+    If GetKeyState("e","P")
     {
-        moveMouse(13, forward)
-        return
-    }
-    If GetKeyState(".","P")
-    {
-        moveMouse(1, forward)
+        moveCursor(13, forward)
         return
     }
     moveCursor(1, forward)
     return
 }
+
 
 moveCursor(step, forward)
 {
@@ -41,6 +39,17 @@ moveCursor(step, forward)
     return
 }
 
+; 移动鼠标自动切换速度
+moveMouseChangeSpeed(forward)
+{
+    If GetKeyState("k","P")
+    {
+        moveMouse(13, forward)
+        return
+    }
+    moveMouse(1, forward)
+    return
+}
 
 moveMouse(step, forward)
 {
