@@ -6,9 +6,6 @@
 
 
 ;网络
-:*:bssh,::ssh -p 22 vagrant@
-:*:fssh,::ssh gaozhonglin@192.168.0.203
-:*:cssh,::ssh vagrant@192.168.0.134
 
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
 :*:unproxy,::unset all_proxy
@@ -27,6 +24,7 @@
 
 ;虚拟机相关
 :*:vm,::sudo /sbin/mount.vboxsf work_mount ~/work_mount/
+:*:dm,::sudo mount /dev/sdb2 ~/disk4
 
 
 ;路径切换

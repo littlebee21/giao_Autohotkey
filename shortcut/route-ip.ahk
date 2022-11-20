@@ -26,3 +26,9 @@
 ;测试虚拟机地址
 :*:cdz,::vagrant@192.168.0.134:
 :*:cdzb,::vagrant@192.168.0.134:~/burn/
+
+
+:*:bssh,::ssh -p 22 vagrant@
+:*:fssh,::ssh gaozhonglin@192.168.0.203
+:*:cssh,::ssh vagrant@192.168.0.134
+:*:nssh,::ssh gao@192.168.31.231

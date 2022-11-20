@@ -1,9 +1,11 @@
 :*:f,::
+    SwitchEng() 
     send {raw}export FD=$(fzf --preview 'cat {}') && echo ${FD}
     send {enter}
     return
 
 :*:ff,::
+    SwitchEng() 
     send {raw}export FD=$(find ~/work_mount/docs |fzf --preview 'cat {}') && echo ${FD}
     send {enter}
     return

@@ -1,10 +1,11 @@
 ;windows的wsl的快捷键
 :*:wgao,::/mnt/d/Users/gao/
-:*:wwd,::/mnt/d/share/docs/siwei
 :*:ws,::/mnt/d/share/
+:*:wwd,::/mnt/d/share/docs/workdoc/
+:*:wsw,::/mnt/d/share/docs/siwei/
+:*:wsh,::/mnt/d/share/shenghuo/
+:*:wd,::/mnt/d/share/docs/
 :*:wg,::/mnt/d/share/gshell/
 :*:ww,::/mnt/d/share/work/
-:*:wc,::/mnt/d/share/caogao/
-:*:wgf,::/mnt/d/share/gshell/fanqiang/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
 :*:wa,::/mnt/d/share/giaoAutohotkey/
