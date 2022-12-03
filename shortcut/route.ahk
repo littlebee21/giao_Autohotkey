@@ -18,6 +18,8 @@
 :*:vc,::~/work_mount/caogao/
 :*:vsw,::~/work_mount/docs/siwei/
 :*:vgf,::~/work_mount/gshell/fanqiang/
+:*:vzl,::~/work_mount/docs/myNavigation/
+
 :*:vgiao,::~/work_mount/giaoAutohotkey/
 :*:vp,::~/post/
 :*:vwtr,::~/work_mount/docs/workdoc/trouble-sum

@@ -15,6 +15,13 @@
     send {enter}
     return
 
+:*:fz,::
+    SwitchEng() 
+    send {raw}export FD=$(find ~/work_mount/docs/myNavigation/ |fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    send {shift}
+    return
+
 :*:hisf,::
 	send, {raw}$(fc -l -n|fzf)
 	return
