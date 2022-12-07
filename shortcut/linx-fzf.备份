@@ -1,0 +1,15 @@
+:*:fb,::
+    send {raw}export FD=$(find ~/work_mount/gshell/ |fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    return
+
+:*:fz,::
+    SwitchEng() 
+    send {raw}export FD=$(find ~/work_mount/docs/myNavigation/ |fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    send {shift}
+    return
+
+:*:daxiao,::       ;查看文件夹的大小
+	send, {raw}'du -h --max-depth=1 ./'
+	return 
