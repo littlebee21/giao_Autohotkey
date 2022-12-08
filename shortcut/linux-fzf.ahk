@@ -6,22 +6,17 @@
     return
 
 :*:s,::
-    SwitchEng() 
-    send {raw}export FK=
-    return
-
-:*:ff,::
 SwitchEng()
 Var =
 (
 export FD=$( \
-locate ${FK} \
-| grep -v ".git" \
-| fzf --preview 'cat {}' \
+locate work_mount \
+| fzf \
 `) && echo ${FD}
 )
 send {raw}%var%
 send {enter}
+send {shift}
 return
 
 

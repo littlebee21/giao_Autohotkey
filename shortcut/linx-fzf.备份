@@ -13,3 +13,25 @@
 :*:daxiao,::       ;查看文件夹的大小
 	send, {raw}'du -h --max-depth=1 ./'
 	return 
+
+
+:*:s,::
+    SwitchEng() 
+    send {raw}export FK=
+    return
+
+
+:*:s,::
+SwitchEng()
+Var =
+(
+export FD=$( \
+locate work_mount \
+| grep -v ".git\|png\|jpg" \
+| fzf \
+`) && echo ${FD}
+)
+send {raw}%var%
+send {enter}
+send {shift}
+return
