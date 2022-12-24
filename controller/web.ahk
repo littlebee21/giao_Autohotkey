@@ -11,7 +11,8 @@ return
                             runWebSite("https://www.baidu.com/") 
 return
 :*:f\:: ;;翻译网站
-                            runWebSite("https://fanyi.baidu.com/")
+                            run "https://fanyi.baidu.com/#en/zh/%clipboard%
+                            return
 return
 :*:yf\:: ;;翻译网站
                             runWebSite("https://dict.youdao.com/search?q=%E5%A4%A7%E4%BA%8E&keyfrom=new-fanyi.smartResult")

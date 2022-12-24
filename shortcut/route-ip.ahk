@@ -32,3 +32,5 @@
 :*:fssh,::ssh gaozhonglin@192.168.0.203
 :*:cssh,::ssh vagrant@192.168.0.134
 :*:nssh,::ssh gao@192.168.31.231
+
+:*:yfssh,::ssh -p 6000 gaozhonglin@121.40.128.13

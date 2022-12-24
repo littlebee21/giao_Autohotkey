@@ -5,6 +5,9 @@
 :*:bg,::bash ~/work_mount/gshell/
 
 
+:*:fd,::find . -name "" 
+:*:fm,::-exec mv {}  /opt/shell  \;
+
 ;网络
 
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890

@@ -18,6 +18,7 @@
 :*:vc,::~/work_mount/caogao/
 :*:vsw,::~/work_mount/docs/siwei/
 :*:vgf,::~/work_mount/gshell/fanqiang/
+:*:vsh,::~/work_mount/shenghuo/
 :*:vzl,::~/work_mount/docs/myNavigation/
 
 :*:vgiao,::~/work_mount/giaoAutohotkey/
@@ -29,6 +30,8 @@
 
 :*:vt,::~/test/
 :*:vtw,::~/test/webui-vue-dev/
+:*:tc,::~/test/common/
+
 
 
 ;everything的使用路径 文件名缩写
