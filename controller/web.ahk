@@ -10,8 +10,10 @@ return
 :*:2\:: 
                             runWebSite("https://www.baidu.com/") 
 return
-:*:f\:: ;;翻译网站
-                            run "https://fanyi.baidu.com/#en/zh/%clipboard%
+!f:: ;;翻译网站
+                            send ^c
+                            sleep 200
+                            run https://fanyi.baidu.com/#en/zh/%clipboard%
                             return
 return
 :*:yf\:: ;;翻译网站

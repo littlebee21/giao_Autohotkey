@@ -1,5 +1,6 @@
-
-
+;linux项目的目录
+:*:dts,::arch/arm/boot/dts
+:*:linux,::~/test/linux
 
 ;windows的路径
 :*:siwei,::D:\share\siwei\

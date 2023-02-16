@@ -5,19 +5,19 @@
     send {shift}
     return
 
-:*:s,::
-SwitchEng()
-Var =
-(
-export FD=$( \
-locate work_mount \
-| fzf \
-`) && echo ${FD}
-)
-send {raw}%var%
-send {enter}
-send {shift}
-return
+:*:wc,::
+    SwitchEng() 
+    send {raw}cd /mnt/d/share/gshell/ && export FD=$(fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    send {shift}
+    return
+
+:*:vc,::
+    SwitchEng() 
+    send {raw}cd ~/work_mount/gshell/ && export FD=$(fzf --preview 'cat {}') && echo ${FD}
+    send {enter}
+    send {shift}
+    return
 
 
 :*:hisf,::
@@ -28,10 +28,22 @@ return
     send, {raw}"${FD}"
     return
 
-:*:b ,::
+:*:so,::
     SwitchEng() 
-    send, {raw}bash "${FD}"
+    send, {raw}source "${FD}"
     return
+
+:*:s,::      ;编辑搜索的内容
+    SwitchEng() 
+    send, {raw}/mnt/c/Program\ Files/Sublime\ Text/sublime_text.exe "${FD}"
+    return
+
+:*:w,::      ;编辑搜索的内容
+    SwitchEng() 
+    send, {raw}/mnt/f/Program\ Files\ \(x86\)/Kingsoft/WPS\ Office/11.8.2.8411/office6/wpsoffice.exe "${FD}"
+    return
+ 
+
 :*:vim ,::      ;编辑搜索的内容
     SwitchEng() 
     send, {raw}vim "${FD}"

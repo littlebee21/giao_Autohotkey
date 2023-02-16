@@ -8,4 +8,4 @@
 :*:wg,::/mnt/d/share/gshell/
 :*:ww,::/mnt/d/share/work/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
-:*:wa,::/mnt/d/share/giaoAutohotkey/
+:*:wgiao,::/mnt/d/share/giaoAutohotkey/

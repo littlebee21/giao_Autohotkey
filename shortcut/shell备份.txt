@@ -1,4 +1,32 @@
+:*:wc,::
+    send, {raw}bash /mnt/d/share/gshell/getCommand.sh
+    send {enter}
+    return
+
+:*:vc,::
+    send, {raw}bash ~/work_mount/gshell/getCommand.sh
+    send {enter}
+    return
+
+
+
 shell备份
+
+:*:rohp,::bash ~/work_mount/gshell/run_openBMCi_by_port_home131_post.sh
+:*:roh,::bash ~/work_mount/gshell/run_openBMCi_by_port_home131.sh
+:*:rowp,::bash ~/work_mount/gshell/run_openBMCi_by_port_work131_post.sh
+:*:row,::bash ~/work_mount/gshell/run_openBMCi_by_port_work131.sh
+
+
+;scp_openbmc_serve.sh
+;scp_openbmc_test.sh
+
+
+;git_pull_all.sh
+;git_push_all.sh
+;git_push.sh
+
+;lsx_client.sh
 
 
 

@@ -20,6 +20,21 @@
     send {raw}export FK=
     return
 
+:*:s,::
+SwitchEng()
+Var =
+(
+export FD=$( \
+locate work_mount \
+| fzf \
+`) && echo ${FD}
+)
+send {raw}%var%
+send {enter}
+send {shift}
+return
+
+
 
 :*:s,::
 SwitchEng()
