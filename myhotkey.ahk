@@ -15,6 +15,7 @@
 #include %A_ScriptDir%\function\activeApplication.ahk
 #include %A_ScriptDir%\function\function.ahk
 #include %A_ScriptDir%\function\IME.ahk
+#include %A_ScriptDir%\function\send.ahk
 #include %A_ScriptDir%\myhotkey.ahk
 #include %A_ScriptDir%\shortcut\find.ahk
 #include %A_ScriptDir%\shortcut\git.ahk
