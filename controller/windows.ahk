@@ -3,6 +3,16 @@
 ;默认win+l 锁定屏幕
 ;F11是全屏操作
 
+#j:: ;左上1/2
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/4),(A_ScreenHeight/3), (A_ScreenWidth/3), (A_ScreenHeight/2),,
+    return
+
+#k:: ;右侧1/2
+    WinGetActiveTitle, WinTitle
+    WinMove, %WinTitle%,, (A_ScreenWidth/2),(A_ScreenHeight/3), (A_ScreenWidth/3), (A_ScreenHeight/2),,
+    return
+
 
 #w:: ;按下win + w，将窗口最大化
     WinMaximize,A

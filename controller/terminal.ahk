@@ -62,6 +62,15 @@ LAlt & j::
     return
 #IfWinActive
 
+$Esc::  
+    ;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘
+    SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
+    IME_SET(0)
+    send,{Esc} 
+    return
+
+
+
 #IfWinActive ahk_exe Xshell.exe
 $Esc::  
     ;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘

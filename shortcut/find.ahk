@@ -2,4 +2,4 @@
 ;利用autohotkey的方式可以实现我们的绝大部分需求
 
 
-find . -path ./tomcat -prune -o -name "*.txt"
+;find . -path ./tomcat -prune -o -name "*.txt"
