@@ -3,6 +3,13 @@
     send {enter}
     return
 
+:*:vc,::
+    SwitchEng() 
+    sendByClipboard("cd ~/work_mount/gshell/ && export FD=$(fzf --preview 'cat {}') && echo ${FD}")
+    send {enter}
+    send {shift}
+    return
+
 :*:fz,::
     SwitchEng() 
     send {raw}export FD=$(find ~/work_mount/docs/myNavigation/ |fzf --preview 'cat {}') && echo ${FD}

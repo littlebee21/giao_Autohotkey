@@ -1,6 +1,11 @@
 sendByClipboard(ByRef str){
     clip:=Clipboard
-    clipboard:=str
+    Clipboard:=str
     send ^v
+    sleep 100
     Clipboard:=clip
 }
+
+
+ 
+

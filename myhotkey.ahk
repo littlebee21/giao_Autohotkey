@@ -18,9 +18,11 @@
 #include %A_ScriptDir%\function\send.ahk
 #include %A_ScriptDir%\myhotkey.ahk
 #include %A_ScriptDir%\shortcut\find.ahk
+#include %A_ScriptDir%\shortcut\generate-short.ahk
 #include %A_ScriptDir%\shortcut\git.ahk
 #include %A_ScriptDir%\shortcut\javascript.ahk
 #include %A_ScriptDir%\shortcut\linux-fzf.ahk
+#include %A_ScriptDir%\shortcut\linux-open.ahk
 #include %A_ScriptDir%\shortcut\linux.ahk
 #include %A_ScriptDir%\shortcut\markdown-snippet.ahk
 #include %A_ScriptDir%\shortcut\music.ahk
@@ -35,4 +37,5 @@
 #include %A_ScriptDir%\shortcut\search.ahk
 #include %A_ScriptDir%\shortcut\shell.ahk
 #include %A_ScriptDir%\shortcut\snippet.ahk
+#include %A_ScriptDir%\temp.ahk
 #include %A_ScriptDir%\test.ahk

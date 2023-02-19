@@ -5,16 +5,10 @@
     send {shift}
     return
 
-:*:wc,::
+:*:fw,::
     SwitchEng() 
-    sendByClipboard("cd /mnt/d/share/gshell/ && export FD=$(fzf --preview 'cat {}') && echo ${FD}")
-    send {enter}
-    send {shift}
-    return
+    sendByClipboard("export FD=$(/mnt/d/share/gshell/linux-fzf-wsl.sh) && echo ${FD}")
 
-:*:vc,::
-    SwitchEng() 
-    sendByClipboard("cd ~/work_mount/gshell/ && export FD=$(fzf --preview 'cat {}') && echo ${FD}")
     send {enter}
     send {shift}
     return
@@ -24,43 +18,6 @@
 	send, {raw}$(fc -l -n|fzf)
 	return
 
-:*:fd,::        
-    str ="${FD}"
-    sendByClipboard(str)
-    return
 
-:*:so,::
-    SwitchEng() 
-    str = source "${FD}"
-    sendByClipboard(str)
-    return
-
-:*:s,::      ;编辑搜索的内容
-    SwitchEng() 
-    str = /mnt/d/Program\ Files/Sublime\ Text/sublime_text.exe "${FD}"
-    sendByClipboard(str)
-    return
-
-:*:w,::      ;编辑搜索的内容
-    SwitchEng() 
-    str = /mnt/f/Program\ Files\ \(x86\)/Kingsoft/WPS\ Office/11.8.2.8411/office6/wpsoffice.exe "${FD}"
-    sendByClipboard(str)
-    return
- 
-
-:*:vim ,::      ;编辑搜索的内容
-    SwitchEng() 
-    str = vim "${FD}"
-    sendByClipboard(str)
-    return
-:*:c,::      ;编辑搜索的内容
-    SwitchEng() 
-    str = code "${FD}"
-    sendByClipboard(str)
-    return
-:*:cd ,::
-    SwitchEng() 
-    str = cd "${FD`%/*}" && ls
-    sendByClipboard(str)
-    return
+        
 
