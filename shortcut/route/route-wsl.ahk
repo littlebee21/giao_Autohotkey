@@ -7,6 +7,7 @@
 :*:wd,::/mnt/d/share/docs/
 :*:wg,::/mnt/d/share/gshell/
 :*:ww,::/mnt/d/share/work/
+:*:wwp,::/mnt/d/share/work/post/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
 :*:wgiao,::/mnt/d/share/giaoAutohotkey/
 

@@ -15,6 +15,8 @@
 :*:fdzs,::vagrant@192.168.0.131:~/openbmc/build/workspace/sources/
 :*:vdzp,::vagrant@192.168.0.131:~/post/
 
+:*:wdz,::gao@192.168.0.28:
+
 
 ;qemu虚拟机的地址
 ;scp -P 2222 1.txt root@192.168.31.131:/

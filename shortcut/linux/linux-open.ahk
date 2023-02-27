@@ -22,7 +22,7 @@
     return
  
 
-:*:vim,::      ;编辑搜索的内容
+:*:v,::      ;编辑搜索的内容
     SwitchEng() 
     str = vim "${FD}"
     sendByClipboard(str)
@@ -32,7 +32,7 @@
     str = code "${FD}"
     sendByClipboard(str)
     return
-:*:cd,::
+:*:cd ,::
     SwitchEng() 
     str = cd "${FD`%/*}" && ls
     sendByClipboard(str)
