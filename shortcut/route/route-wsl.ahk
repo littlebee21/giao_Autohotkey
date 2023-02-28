@@ -1,7 +1,7 @@
 ;windows的wsl的快捷键
 :*:wgao,::/mnt/d/Users/gao/
 :*:ws,::/mnt/d/share/
-:*:wwd,::/mnt/d/share/docs/workdoc/
+:*:wwd,::/mnt/d/share/docs/workcache/
 :*:wsw,::/mnt/d/share/docs/siwei/
 :*:wsh,::/mnt/d/share/shenghuo/
 :*:wd,::/mnt/d/share/docs/
@@ -9,7 +9,7 @@
 :*:ww,::/mnt/d/share/work/
 :*:wwp,::/mnt/d/share/work/post/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
-:*:wgiao,::/mnt/d/share/giaoAutohotkey/
+:*:wgiao,::/mnt/d/share/giao_Autohotkey/
 
 
 :*:wps,::/mnt/f/Program\ Files\ \(x86\)/Kingsoft/WPS\ Office/11.8.2.8411/office6/wpsoffice.exe
