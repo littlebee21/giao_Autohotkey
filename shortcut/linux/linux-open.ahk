@@ -27,6 +27,12 @@
     str = vim "${FD}"
     sendByClipboard(str)
     return
+
+ :*:n,::      ;编辑搜索的内容
+    SwitchEng() 
+    str = nano "${FD}"
+    sendByClipboard(str)
+    return
 :*:c,::      ;编辑搜索的内容
     SwitchEng() 
     str = code "${FD}"
