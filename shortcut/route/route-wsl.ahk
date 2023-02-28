@@ -14,3 +14,6 @@
 
 :*:wps,::/mnt/f/Program\ Files\ \(x86\)/Kingsoft/WPS\ Office/11.8.2.8411/office6/wpsoffice.exe
 :*:sub,::/mnt/d/Program\ Files/Sublime\ Text/sublime_text.exe
+
+
+:*:wgh,::/mnt/d/share/shenghuo/guihua
