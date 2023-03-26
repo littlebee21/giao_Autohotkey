@@ -17,16 +17,12 @@
 #include %A_ScriptDir%\function\IME.ahk
 #include %A_ScriptDir%\function\send.ahk
 #include %A_ScriptDir%\myhotkey.ahk
-#include %A_ScriptDir%\shortcut\find.ahk
-#include %A_ScriptDir%\shortcut\generate-short.ahk
 #include %A_ScriptDir%\shortcut\git.ahk
-#include %A_ScriptDir%\shortcut\javascript.ahk
 #include %A_ScriptDir%\shortcut\linux\linux-fzf.ahk
-#include %A_ScriptDir%\shortcut\linux\linux-open.ahk
 #include %A_ScriptDir%\shortcut\linux\linux.ahk
-#include %A_ScriptDir%\shortcut\markdown-snippet.ahk
 #include %A_ScriptDir%\shortcut\music.ahk
 #include %A_ScriptDir%\shortcut\openbmc.ahk
+#include %A_ScriptDir%\shortcut\regex\regex.ahk
 #include %A_ScriptDir%\shortcut\route\route-ip.ahk
 #include %A_ScriptDir%\shortcut\route\route-openbmc-2600.ahk
 #include %A_ScriptDir%\shortcut\route\route-openbmc-romlus.ahk

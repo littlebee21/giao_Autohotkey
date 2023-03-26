@@ -10,14 +10,6 @@
     return
 
 
-;正则表达式
-:*:zhongwen,::(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)
-:*:konghang,::^\s*(?=\r?$)\n
-
-
-;file
-:*:gc,::gaocache.txt
-
 :*:fg,::----------------------------------------------------------
 
 :*:i18,::
@@ -38,10 +30,5 @@
     a = %A_YYYY%-%A_MM%%A_DD%-%A_Hour%    ;插入的时间戳
     send %a%
     return
-    
-:*:l,::
-    send {raw}.*
-    return
-
 
 ;-Ddata_com_ibm=true  extension:bbappend

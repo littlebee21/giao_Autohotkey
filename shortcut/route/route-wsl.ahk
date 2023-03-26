@@ -10,10 +10,4 @@
 :*:wwp,::/mnt/d/share/work/post/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
 :*:wgiao,::/mnt/d/share/giaoAutohotkey/
-
-
-:*:wps,::/mnt/f/Program\ Files\ \(x86\)/Kingsoft/WPS\ Office/11.8.2.8411/office6/wpsoffice.exe
-:*:ss,::/mnt/d/Program\ Files/Sublime\ Text/sublime_text.exe
-
-
 :*:wgh,::/mnt/d/share/shenghuo/guihua
