@@ -1,23 +1,17 @@
-.
-├── IME.ahk
-├── README.md
-├── Vagrantfile
-├── change_apt_mirror.sh
-├── git_config.sh
-├── git_new.sh
-├── git_new2.sh
-├── install_IAR.sh 
-├── install_bashrc.sh
-├── install_necessary_apt.sh
-├── install_nfs.sh
-├── install_nvim.sh
-├── install_sys_ubuntu18.sh
-├── install_sys_ubuntu20.sh
-├── install_tftp.sh
-├── install_vim.sh
-├── install_vim_plug.sh
-├── myhotkey 备用.txt
-├── myhotkey.ahk
-└── system_plat.sh
+### 背景：
 
-0 directories, 20 files
+### 功能：
+	当前此仓库完成的功能包括
+	1. 部分路径的shortcut
+	2. 对于windows热键的部分自定义功能
+
+### 当前正在做的修改：
+	1. 将部分的代码片段迁移到gist
+
+
+
+注意点:
+1. 使用的autohotkey的版本为AutoHotkey_1.1.33.10_setup，如果是2以上的版本会出现语法问题无法使用
+
+
+

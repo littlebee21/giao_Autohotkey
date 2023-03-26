@@ -2,19 +2,6 @@
 :*:ngs,::ng serve --open --host 192.168.0.130
 :*:ncheck,::–no-check-certificate
 
-:*:bg,::bash ~/work_mount/gshell/
-
-
-
-;查找目标文件，并且将文件移动到
-;把当前目录下面的file（不包括目录)，移动到/opt/shell
-;find  .  -type f  -exec mv {}   /opt/shell   \;
-;find .  -type f  |  xargs  -I  '{}'  mv  {}  /opt/shell
-
-:*:fm,::
-    send {raw}find . -name "" -exec mv {} "" \;
-    return 
-
 ;网络
 
 :*:proxy,::export all_proxy=socks5://127.0.0.1:7890
