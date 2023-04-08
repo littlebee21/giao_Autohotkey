@@ -4,9 +4,6 @@
 ;参考文档如何进行效率，交互，eg vws就是命令，使用编程的命令空间-操作的方式
 
 
-:*:sssb\::
-        ActivateAndOpen("Sublime Text","C:\Program Files\Sublime Text\sublime_text.exe")
-        return
 :*:awx\::
             ActivateAndOpen("WeChat","F:\Program Files (x86)\Tencent\WeChat\WeChat.exe")
 :*:avb\::
@@ -28,4 +25,7 @@ LAlt & q::
             return
 LAlt & w::
             ActivateAndOpen("203","D:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\203-workspace.code-workspace")
+            return
+LAlt & a::
+            ActivateAndOpen("Sublime Text","D:\Program Files\Sublime Text\sublime_text.exe")
             return
