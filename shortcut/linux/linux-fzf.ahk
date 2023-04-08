@@ -23,5 +23,7 @@
     return
 
 
-        
+:*:fd,::
+    sendByClipboard("${FD}")
+    return
 

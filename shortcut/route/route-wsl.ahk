@@ -10,4 +10,4 @@
 :*:wwp,::/mnt/d/share/work/post/
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
 :*:wgiao,::/mnt/d/share/giaoAutohotkey/
-:*:wgh,::/mnt/d/share/shenghuo/guihua
+:*:wzz,::/mnt/d/share/shenghuo/zhouzhi
