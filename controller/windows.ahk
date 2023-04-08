@@ -16,6 +16,9 @@
     WinMove, %WinTitle%,, (A_ScreenWidth/2),(A_ScreenHeight/3), (A_ScreenWidth/3), (A_ScreenHeight/2),,
     return
 
+#w:: ;按下win + w，将窗口最大化
+    WinMaximize,A
+    return
 
 
 #[:: ;焦点跳转到左侧界面

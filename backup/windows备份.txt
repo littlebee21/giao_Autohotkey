@@ -2,6 +2,3 @@ windows的wsl也有很多程序命令用于使用
 
 
 
-#w:: ;按下win + w，将窗口最大化
-    WinMaximize,A
-    return
