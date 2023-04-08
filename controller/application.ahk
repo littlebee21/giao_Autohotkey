@@ -22,9 +22,10 @@
 :*:bwp\::
             ActivateAndOpen("BaiduNetdisk","C:\Users\gao\AppData\Roaming\Baidu\BaiduNetdisk\BaiduNetdisk.exe")
 
-:*:ws\::
-            ActivateAndOpen("wsl","D:\Program Files\Microsoft VS Code\Code.exe C:\Users\gao\Desktop\wsl.code-workspace")
+; 当前的alt的快捷键的方式能比字母手写的方式更快并且符合之前的思维方式
+LAlt & q::
+            ActivateAndOpen("wsl","D:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\wsl.code-workspace")
             return
-:*:wsl\::
-            ActivateAndOpen("wsl","D:\Program Files\Microsoft VS Code\Code.exe C:\Users\gao\Desktop\wsl.code-workspace")
+LAlt & w::
+            ActivateAndOpen("203","D:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\203-workspace.code-workspace")
             return
