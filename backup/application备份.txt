@@ -11,7 +11,14 @@
             ActivateAndOpen("- Qt Creator","F:\Qt\Qt5.14.2\Tools\QtCreator\bin\qtcreator.exe")
 :*:aqa\::
             ActivateAndOpen("Qt 助手","/mnt/f/Qt/Qt5.14.2/5.14.2/mingw73_32/bin/assistant.exe")
-
+:*:amb\::
+            ActivateAndOpen("Moba","F:\BaiduNetdiskDownload\MobaXterm_Portable_v22.0\MobaXterm_Personal_22.0.exe")
+:*:atim\::
+            ActivateAndOpen("TIM","C:\Program Files (x86)\Tencent\TIM\Bin\TIM.exe")
+:*:atp\::
+            ActivateAndOpen("Typora","C:\Program Files (x86)\Typora\Typora.exe")
+:*:avr\::
+            ActivateAndOpen("v2ray","D:\software\v2rayN-Core\v2rayN.exe")
 
 /*
     :*:b/::
@@ -82,3 +89,13 @@
     :*:psh/::
         ActivateAndOpen("PowerShell","C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe")
         return
+
+Alt & m::  ;打开vscode窗口
+    GetKeyState, state, shift
+    if state = D
+    {
+        ActivateAndOpen("Code","D:\Program Files\Microsoft VS Code\Code.exe")
+        send ^j
+        send ^j
+    }
+    return

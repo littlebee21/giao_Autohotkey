@@ -22,7 +22,7 @@ Activate(t)
     return 0
 }
 
-        ActivateAndOpen(t,p)
+ActivateAndOpen(t,p)
 {
     if Activate(t)==0
     {

@@ -1,9 +1,7 @@
 #include %A_ScriptDir%\controller\application.ahk
 #include %A_ScriptDir%\controller\everything.ahk
-#include %A_ScriptDir%\controller\file.ahk
 #include %A_ScriptDir%\controller\global-mouse-cursor.ahk
 #include %A_ScriptDir%\controller\global.ahk
-#include %A_ScriptDir%\controller\keymix.ahk
 #include %A_ScriptDir%\controller\terminal.ahk
 #include %A_ScriptDir%\controller\vscode.ahk
 #include %A_ScriptDir%\controller\web.ahk
