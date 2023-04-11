@@ -24,7 +24,7 @@ LAlt & q::
             ActivateAndOpen("raw-beebox","C:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\raw-beebox.code-workspace")
             return
 LAlt & w::
-            ActivateAndOpen("Sublime Text","D:\Program Files\Sublime Text\sublime_text.exe")
+            ActivateAndOpen("131-beebox","C:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\131-beebox.code-workspace")
             return
 ;主要是工作的机器
 LAlt & a::
