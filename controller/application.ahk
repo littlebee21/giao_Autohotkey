@@ -21,11 +21,15 @@
 
 ; 当前的alt的快捷键的方式能比字母手写的方式更快并且符合之前的思维方式
 LAlt & q::
-            ActivateAndOpen("wsl","D:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\wsl.code-workspace")
+            ActivateAndOpen("raw-beebox","C:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\raw-beebox.code-workspace")
             return
 LAlt & w::
-            ActivateAndOpen("203","D:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\203-workspace.code-workspace")
-            return
-LAlt & a::
             ActivateAndOpen("Sublime Text","D:\Program Files\Sublime Text\sublime_text.exe")
+            return
+;主要是工作的机器
+LAlt & a::
+            ActivateAndOpen("203-beebox","C:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\203-beebox.code-workspace")
+            return
+LAlt & s::
+            ActivateAndOpen("186-31blue","C:\Program Files\Microsoft VS Code\Code.exe D:\share\gshell\vscode-space\186-31blue-workspace.code-workspace")
             return
