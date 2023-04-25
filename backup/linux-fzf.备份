@@ -17,3 +17,26 @@
     send {shift}
     return
 
+:*:f,::
+    SwitchEng() 
+    sendByClipboard("export FD=$(pwd)/$(fzf --preview 'cat {}') && echo ${FD}")
+    send {enter}
+    send {shift}
+    return
+
+:*:r,::
+    SwitchEng() 
+    sendByClipboard("export FD=$(/mnt/d/share/gshell/fzf/linux-fzf-wsl.sh) && echo $(FD)")
+
+    send {enter}
+    send {shift}
+    return
+
+
+:*:h,::
+    SwitchEng() 
+    sendByClipboard("export FD=$(cat ~/found-file |fzf)")
+
+    send {enter}
+    send {shift}
+    return

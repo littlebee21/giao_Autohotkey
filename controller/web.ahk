@@ -1,4 +1,8 @@
 ;####### 打开网站 ####################
+:*:ai\::
+    run https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx
+    return 
+
 :*:h\:: ;github网站
     run https://github.com/search?q=%clipboard%&type=code;
     run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索

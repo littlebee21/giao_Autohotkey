@@ -4,6 +4,7 @@
 :*:wwd,::/mnt/d/share/docs/workcache/
 :*:wsw,::/mnt/d/share/docs/siwei/
 :*:wsh,::/mnt/d/share/shenghuo/
+:*:wsy,::/mnt/d/share/shangye/
 :*:wd,::/mnt/d/share/docs/
 :*:wg,::/mnt/d/share/gshell/
 :*:ww,::/mnt/d/share/work/
@@ -11,3 +12,5 @@
 :*:wbai,::/mnt/f/BaiduNetdiskDownload/
 :*:wgiao,::/mnt/d/share/giaoAutohotkey/
 :*:wzz,::/mnt/d/share/shenghuo/zhouzhi
+:*:wbk,::/mnt/d/share/book
+
