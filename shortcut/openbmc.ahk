@@ -7,5 +7,7 @@
 :*:ebmcp,::export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env
 :*:ebmcr,::export TEMPLATECONF=meta-ibm/meta-romulus/conf  && . openbmc-env
 :*:ebmcl,::. setup evb-ast2600
+:*:ebmcf,::. setup evb-graped2s
+
 
 
