@@ -8,7 +8,9 @@
     run https://github.com/search?q=%clipboard%&type=wikis      ;github 博客搜索
     run	https://search.gitee.com/?skin=rec&type=blog&q=%clipboard% ;gitee博客搜索
     return
-:*:ss\:: ;google网站
+Alt & enter:: ;google网站
+                            send ^c
+                            sleep 100
                             Run, https://www.google.com/search?q=%clipboard%
 return
 :*:2\:: 
