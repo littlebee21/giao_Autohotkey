@@ -4,11 +4,8 @@
 ;将实际的内容写在shell的脚本当中，用autohotkey写出类似eve的调用方式
 
 ;定义
-:*:grepd,::
-    sendByClipboard("grep \* . -rn | grep")
+:*:dy,::
+    sendByClipboard("-n | grep '(=|return)' -vE | grep ")
     return
 
-;调用
-:*:grep,::
-    sendByClipboard("grep \* . -rnv | grep")
-    return
+;调用肯定更多，掺杂少量的定义也无所谓；
