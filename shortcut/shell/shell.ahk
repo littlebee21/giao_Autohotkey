@@ -4,8 +4,11 @@
 ;将实际的内容写在shell的脚本当中，用autohotkey写出类似eve的调用方式
 
 ;定义
-:*:dy,::
-    sendByClipboard("-n | grep '(=|return)' -vE | grep ")
+;还需要过滤掉所有前面没有内容的
+:*:js,::
+    sendByClipboard("grep $kw -rn | grep '(=|return|;|if)' -vE | grep $kw ")
     return
 
+:*:kw,::export kw=
 ;调用肯定更多，掺杂少量的定义也无所谓；
+

@@ -17,7 +17,7 @@
     return
 
 :*:time,::
-    a = %A_YYYY%-%A_MM%%A_DD%-%A_Hour%    ;插入的时间戳
+    a = %A_YYYY%-%A_MM%%A_DD%-%A_Hour%%A_Min%    ;插入的时间戳
     send %a%
     return 
 

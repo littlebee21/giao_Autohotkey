@@ -8,3 +8,11 @@
 :*:fd,::
     sendByClipboard("$FD")
     return
+
+:*:tg,::
+    sendByClipboard("-g $name.txt:$tg")
+    return
+
+:*:pg,::
+    sendByClipboard("$pg")
+    return
