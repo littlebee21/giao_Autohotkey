@@ -1,0 +1,9 @@
+{
+	"folders": [],
+	"remoteAuthority": "ssh-remote+192.168.0.131",
+	"settings": {
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"aiXcoder.showTrayIcon": true,
+		"C_Cpp.errorSquiggles": "disabled"
+	}
+}
