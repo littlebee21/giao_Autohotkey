@@ -1,3 +1,4 @@
+#include %A_ScriptDir%\controller\application-vscode.ahk
 #include %A_ScriptDir%\controller\application.ahk
 #include %A_ScriptDir%\controller\everything.ahk
 #include %A_ScriptDir%\controller\global-mouse-cursor.ahk
