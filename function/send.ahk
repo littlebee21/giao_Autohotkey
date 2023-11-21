@@ -5,3 +5,9 @@ sendByClipboard(ByRef str){
     sleep 100
     Clipboard:=clip
 }
+
+
+sendFile(myPath) {
+    FileRead, Clipboard, %A_ScriptDir%%myPath%
+    send ^v
+}

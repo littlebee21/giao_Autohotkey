@@ -3,7 +3,7 @@
     send, {raw}:*:tt,::
     return
 
-:*:pr,::printf("$$$$$$$$$，func = %s, line = %d $$$$$$$$$$$ \n", __func__, __LINE__); //test
+:*:pr,::
 :*:tm,::
     send {raw}txt|md
     return

@@ -27,8 +27,8 @@
 #include %A_ScriptDir%\shortcut\route\route.ahk
 #include %A_ScriptDir%\shortcut\search.ahk
 #include %A_ScriptDir%\shortcut\shell.ahk
+#include %A_ScriptDir%\shortcut\snippet.ahk
+#include %A_ScriptDir%\shortcut\time\time.ahk
 #include %A_ScriptDir%\snippet\address\address.ahk
-#include %A_ScriptDir%\snippet\snippet.ahk
-#include %A_ScriptDir%\snippet\time\time.ahk
 #include %A_ScriptDir%\temp.ahk
 #include %A_ScriptDir%\test.ahk

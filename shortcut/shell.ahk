@@ -7,8 +7,6 @@
 
 
 :*:fg,::
-    FileRead, Clipboard, %A_ScriptDir%\shell\find-gshell.sh
-    send ^v
-    send {enter}
+    sendFile("\snippet\shell\find-gshell.sh")
+    send {enter} 
     return
-

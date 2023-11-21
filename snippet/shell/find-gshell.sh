@@ -1,0 +1,1 @@
+cd /mnt/d/share/gshell/ && export FD=$(pwd)/$(fzf --preview 'cat {}') && echo ${FD} && cd -

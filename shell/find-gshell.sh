@@ -1,1 +1,0 @@
-export FD=$(pwd)/$(find /mnt/d/share/gshell -type f -not -path '*/.*' |fzf --preview 'cat {}') && echo ${FD}
