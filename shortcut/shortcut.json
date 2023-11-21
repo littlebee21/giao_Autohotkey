@@ -1,0 +1,11 @@
+{
+    "bbmc": "bitbake obmc-phosphor-image",
+    "bmc": "obmc-phosphor-image",
+    "ebmcp": "export TEMPLATECONF=meta-ibm/meta-palmetto/conf  && . openbmc-env",
+    "zhongwen": "(.[\u4E00-\u9FA5]+)|([\u4E00-\u9FA5]+.)",
+    "gita": "git add . && git commit --no-verify && git push --set-upstream",
+    "ahk": ":*:tt,::",
+    "fd": "$FD",
+    "pg": "$pg",
+    "vm": "sudo /sbin/mount.vboxsf work_mount ~/work_mount/"
+}

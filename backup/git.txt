@@ -1,0 +1,2 @@
+;添加
+:*:gita,::git add . && git commit --no-verify && git push --set-upstream
