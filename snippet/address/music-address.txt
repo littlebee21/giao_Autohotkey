@@ -7,8 +7,3 @@
 :*:g7,::https://music.163.com/#/playlist?id=939908494    ;巫师
 :*:g8,::https://music.163.com/#/playlist?id=525369470    ;太阳
 :*:g9,::https://music.163.com/#/playlist?id=525369470    ;太阳
-
-
-
-
-

@@ -28,6 +28,7 @@
 
             :*:wsc,::/mnt/d/share/data/docs/adoc/shengchan           ; 生产
             :*:wxs,::/mnt/d/share/data/docs/adoc/fangfa-xiaoshou            ; 销售
+            :*:wms,::/mnt/d/share/data/docs/adoc/fangfa-mousheng            ; 谋生
             :*:wx,::/mnt/d/share/data/docs/adoc/fangfa-xing                 ; 性
             :*:wsj,::/mnt/d/share/data/docs/adoc/fangfa-shijian             ; 时间
 

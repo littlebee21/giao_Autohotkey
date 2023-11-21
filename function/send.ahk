@@ -5,7 +5,3 @@ sendByClipboard(ByRef str){
     sleep 100
     Clipboard:=clip
 }
-
-
- 
-

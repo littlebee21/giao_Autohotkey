@@ -17,7 +17,6 @@
 #include %A_ScriptDir%\shortcut\git.ahk
 #include %A_ScriptDir%\shortcut\linux\linux-fzf.ahk
 #include %A_ScriptDir%\shortcut\linux\linux.ahk
-#include %A_ScriptDir%\shortcut\music.ahk
 #include %A_ScriptDir%\shortcut\openbmc.ahk
 #include %A_ScriptDir%\shortcut\regex\regex.ahk
 #include %A_ScriptDir%\shortcut\route\route-ip.ahk
@@ -26,9 +25,10 @@
 #include %A_ScriptDir%\shortcut\route\route-openbmc.ahk
 #include %A_ScriptDir%\shortcut\route\route-wsl.ahk
 #include %A_ScriptDir%\shortcut\route\route.ahk
-#include %A_ScriptDir%\shortcut\scp.ahk
 #include %A_ScriptDir%\shortcut\search.ahk
-#include %A_ScriptDir%\shortcut\shell\shell.ahk
-#include %A_ScriptDir%\shortcut\snippet.ahk
+#include %A_ScriptDir%\shortcut\shell.ahk
+#include %A_ScriptDir%\snippet\address\address.ahk
+#include %A_ScriptDir%\snippet\snippet.ahk
+#include %A_ScriptDir%\snippet\time\time.ahk
 #include %A_ScriptDir%\temp.ahk
 #include %A_ScriptDir%\test.ahk
