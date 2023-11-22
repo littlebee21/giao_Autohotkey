@@ -1,8 +1,8 @@
-:*:git,::
-sendFile("\snippet\src\address\git-address.txt")
+:*:ga,::
+sendFile("\snippet\src\address\ga-gitaddress.txt")
 return
-:*:music,::
-sendFile("\snippet\src\address\music-address.txt")
+:*:ma,::
+sendFile("\snippet\src\address\ma-musicaddress.txt")
 return
 :*:cp,::
 sendFile("\snippet\src\c\cp-print.c")
