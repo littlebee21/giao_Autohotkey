@@ -1,3 +1,8 @@
+:*:fg,::
+    sendFile("\snippet\shell\find-gshell.sh")
+    send {enter} 
+    return
+
 :*:wc,::
     send, {raw}bash /mnt/d/share/gshell/getCommand.sh
     send {enter}

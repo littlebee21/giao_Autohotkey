@@ -23,7 +23,5 @@
 #include %A_ScriptDir%\route\route-wsl.ahk
 #include %A_ScriptDir%\route\route.ahk
 #include %A_ScriptDir%\shortcut\output.ahk
-#include %A_ScriptDir%\snippet\address\address.ahk
-#include %A_ScriptDir%\snippet\shell.ahk
+#include %A_ScriptDir%\snippet\snippet.ahk
 #include %A_ScriptDir%\temp.ahk
-#include %A_ScriptDir%\test.ahk

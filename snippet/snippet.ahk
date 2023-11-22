@@ -1,0 +1,12 @@
+:*:git,::
+sendFile("\snippet\src\address\git-address.txt")
+return
+:*:music,::
+sendFile("\snippet\src\address\music-address.txt")
+return
+:*:cp,::
+sendFile("\snippet\src\c\cp-print.c")
+return
+:*:fg,::
+sendFile("\snippet\src\shell\fg-findgshell.sh")
+return
