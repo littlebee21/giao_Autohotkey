@@ -15,6 +15,9 @@
     "virtualbox": {
         "vm": "sudo /sbin/mount.vboxsf work_mount ~/work_mount/"
     },
+    "route": {
+        "wmnd": "/mnt/d/share/data/docs/myNavigation/doc-"
+    },
     "chinese": {
         "bxjb": "编写脚本"
     }

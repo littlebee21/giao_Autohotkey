@@ -19,6 +19,9 @@ return
 :*:vm,::
 sendByClipboard("sudo /sbin/mount.vboxsf work_mount ~/work_mount/")
 return
+:*:wmnd,::
+sendByClipboard("/mnt/d/share/data/docs/myNavigation/doc-")
+return
 :*:bxjb,::
 sendByClipboard("编写脚本")
 return

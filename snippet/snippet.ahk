@@ -7,6 +7,9 @@ return
 :*:cp,::
 sendFile("\snippet\src\c\cp-print.c")
 return
+:*:lk,::
+sendFile("\snippet\src\markdown\lk-link.txt")
+return
 :*:fg,::
 sendFile("\snippet\src\shell\fg-findgshell.sh")
 return

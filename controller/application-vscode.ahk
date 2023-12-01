@@ -3,6 +3,6 @@ LAlt & q::
             ActivateAndOpen("wsl-beebox","C:\Program Files\Microsoft VS Code\Code.exe .\vscode-space\wsl-beebox.code-workspace")
             return
 LAlt & w::
-            ActivateAndOpen("common-beebox","C:\Program Files\Microsoft VS Code\Code.exe .\vscode-space\beebox.code-workspace")
+            ActivateAndOpen("common-beebox","C:\Program Files\Microsoft VS Code\Code.exe .\vscode-space\common-beebox.code-workspace")
             return
 
