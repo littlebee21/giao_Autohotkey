@@ -1,4 +1,4 @@
-#include %A_ScriptDir%\function\IME.ahk
+#include %A_ScriptDir%\src\function\IME.ahk
 
 ;切换输入法的
 ;SwitchIME(04090409) ; 英语(美国) 美式键盘

@@ -1,4 +1,4 @@
-#include %A_ScriptDir%\function\IME.ahk
+#include %A_ScriptDir%\src\function\IME.ahk
 
 
 ^\::  ;打开vscode窗口
