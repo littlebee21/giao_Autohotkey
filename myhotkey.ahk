@@ -1,6 +1,7 @@
 #include %A_ScriptDir%\myhotkey.ahk
 #include %A_ScriptDir%\src\controller\application-vscode.ahk
 #include %A_ScriptDir%\src\controller\application.ahk
+#include %A_ScriptDir%\src\controller\edge.ahk
 #include %A_ScriptDir%\src\controller\everything.ahk
 #include %A_ScriptDir%\src\controller\global-mouse-cursor.ahk
 #include %A_ScriptDir%\src\controller\global.ahk

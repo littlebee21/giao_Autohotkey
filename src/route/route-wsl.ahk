@@ -6,22 +6,25 @@
 
     :*:ww,::/mnt/d/share/work/
     :*:wwp,::/mnt/d/share/work/post/
-    :*:wbai,::/mnt/f/BaiduNetdiskDownload/
+    :*:fbai,::/mnt/f/BaiduNetdiskDownload/
+    :*:ebai,::/mnt/e/BaiduNetdiskDownload/ 
 
-:*:wg,::/mnt/d/share/gshell/
+:*:wg,::/mnt/d/share/gshell/src/
 
 :*:wgiao,::/mnt/d/share/giaoAutohotkey/
 
 :*:wf,::/mnt/d/share/data/
-    :*:wpro,::/mnt/d/share/data/project/                ;project
+    :*:wpdf,::/mnt/d/share/data/big/book/
+    :*:wp,::/mnt/d/share/data/project/                  ;project
     :*:wpic,::/mnt/d/share/data/picmind/                ;picmind
     :*:wd,::/mnt/d/share/data/docs/
+        :*:wt,::/mnt/d/share/data/docs/trash/
         :*:wwd,::/mnt/d/share/data/docs/workcache
-        :*:wwt,::/mnt/d/share/data/docs/worktemp         ; 工作临时
-        :*:wmn,::/mnt/d/share/data/docs/myNavigation      ;导航整理
+        :*:wwt,::/mnt/d/share/data/docs/worktemp/         ; 工作临时
+        :*:wmn,::/mnt/d/share/data/docs/myNavigation/      ;导航整理
         :*:wsw,::/mnt/d/share/data/docs/siwei
         :*:wad,::/mnt/d/share/data/docs/adoc/
-            :*:wxm,::/mnt/d/share/data/docs/adoc/xiangmu          ;项目
+            :*:wxm,::/mnt/d/share/data/docs/adoc/fangfa-xiangmu       ;项目
             :*:wgh,::/mnt/d/share/data/docs/adoc/aim-             
             :*:gjs,::/mnt/d/share/data/docs/adoc/aim-jishu            ; 技术
             :*:grs,::/mnt/d/share/data/docs/adoc/aim-rensheng         ; 人生
@@ -43,3 +46,5 @@
             :*:wr,::/mnt/d/share/data/docs/adoc/yuanli-ren   ; ren
             :*:wby,::/mnt/d/share/data/docs/adoc/yuanli-boyi                ; 博弈
             :*:wgl,::/mnt/d/share/data/docs/adoc/yuanli-guanli              ; 管理
+            :*:wjc,::/mnt/d/share/data/docs/adoc/wodejuece                  ; 决策
+

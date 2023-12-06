@@ -18,6 +18,22 @@
     "route": {
         "wmnd": "/mnt/d/share/data/docs/myNavigation/doc-"
     },
+    "route_powershell": {
+        "ps" :    "D:\\share\\",
+        "pfbai" : "F:\\BaiduNetdiskDownload\\",
+        "pebai" : "E:\\BaiduNetdiskDownload\\",
+        "pg" :    "D:\\share\\gshell\\src\\",
+        "pgiao" : "D:\\share\\giaoAutohotkey\\",
+        "pp" :    "D:\\share\\data\\project\\",
+        "ppic" :  "D:\\share\\data\\picmind\\",
+        "pd" :  "D:\\share\\data\\docs\\",
+        "psw" :  "D:\\share\\data\\docs\\siwei",
+        "pad" :  "D:\\share\\data\\docs\\adoc",
+        "pxm" : "D:\\share\\data\\docs\\adoc\\fangfa-xiangmu",
+        "pgh" : "D:\\share\\data\\docs\\adoc\\aim-",
+        "pmn" : "D:\\share\\data\\docs\\myNavigation\\",
+        "pt" : "D:\\share\\data\\docs\\trash\\"
+    },
     "chinese": {
         "bxjb": "编写脚本"
     }
