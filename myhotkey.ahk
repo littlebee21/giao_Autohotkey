@@ -21,7 +21,6 @@
 #include %A_ScriptDir%\src\route\route-openbmc-2600.ahk
 #include %A_ScriptDir%\src\route\route-openbmc-romlus.ahk
 #include %A_ScriptDir%\src\route\route-openbmc.ahk
-#include %A_ScriptDir%\src\route\route-wsl.ahk
 #include %A_ScriptDir%\src\route\route.ahk
 #include %A_ScriptDir%\src\shortcut\output.ahk
 #include %A_ScriptDir%\src\snippet\snippet.ahk

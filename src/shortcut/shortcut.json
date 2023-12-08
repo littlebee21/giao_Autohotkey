@@ -9,8 +9,7 @@
         "gita": "git add . && git commit --no-verify && git push --set-upstream"
     },
     "ahk": {
-        "fd": "$FD",
-        "pg": "$pg"
+        "fd": "$FD"
     },
     "virtualbox": {
         "vm": "sudo /sbin/mount.vboxsf work_mount ~/work_mount/"
@@ -19,20 +18,52 @@
         "wmnd": "/mnt/d/share/data/docs/myNavigation/doc-"
     },
     "route_powershell": {
-        "ps" :    "D:\\share\\",
-        "pfbai" : "F:\\BaiduNetdiskDownload\\",
-        "pebai" : "E:\\BaiduNetdiskDownload\\",
-        "pg" :    "D:\\share\\gshell\\src\\",
-        "pgiao" : "D:\\share\\giaoAutohotkey\\",
-        "pp" :    "D:\\share\\data\\project\\",
-        "ppic" :  "D:\\share\\data\\picmind\\",
-        "pd" :  "D:\\share\\data\\docs\\",
-        "psw" :  "D:\\share\\data\\docs\\siwei",
-        "pad" :  "D:\\share\\data\\docs\\adoc",
-        "pxm" : "D:\\share\\data\\docs\\adoc\\fangfa-xiangmu",
-        "pgh" : "D:\\share\\data\\docs\\adoc\\aim-",
-        "pmn" : "D:\\share\\data\\docs\\myNavigation\\",
-        "pt" : "D:\\share\\data\\docs\\trash\\"
+        "es" :    "D:\\share\\",
+        "efbai" : "F:\\BaiduNetdiskDownload\\",
+        "eebai" : "E:\\BaiduNetdiskDownload\\",
+        "eg" :    "D:\\share\\gshell\\src\\",
+        "egiao" : "D:\\share\\giaoAutohotkey\\",
+        "ep" :    "D:\\share\\data\\project\\",
+        "epic" :  "D:\\share\\data\\picmind\\",
+        "ed" :  "D:\\share\\data\\docs\\",
+        "esw" :  "D:\\share\\data\\docs\\siwei",
+        "ead" :  "D:\\share\\data\\docs\\adoc",
+        "exm" : "D:\\share\\data\\docs\\adoc\\fangfa-xiangmu",
+        "egh" : "D:\\share\\data\\docs\\adoc\\aim-",
+        "emn" : "D:\\share\\data\\docs\\myNavigation\\",
+        "et" : "D:\\share\\data\\docs\\trash\\"
+    },
+    "route_wsl": {
+        "ww": "/mnt/d/share/work/",
+        "ws": "/mnt/d/share/",
+        "wwp": "/mnt/d/share/work/post/",
+        "fbai": "/mnt/f/BaiduNetdiskDownload/",
+        "ebai": "/mnt/e/BaiduNetdiskDownload/",
+        "wg": "/mnt/d/share/gshell/src/",
+        "wgiao": "/mnt/d/share/giaoAutohotkey/",
+        "wpdf": "/mnt/d/share/data/big/book/",
+        "wp": "/mnt/d/share/data/project/",
+        "wpic": "/mnt/d/share/data/picmind/",
+        "wd":  "/mnt/d/share/data/docs/",
+        "wt":  "/mnt/d/share/data/docs/trash/",
+        "wwd": "/mnt/d/share/data/docs/workcache",
+        "wsw": "/mnt/d/share/data/docs/siwei"
+    },
+    "adoc": {
+        "wad": "/mnt/d/share/data/docs/adoc/",
+        "wxm": "/mnt/d/share/data/docs/adoc/fangfa-xiangmu",
+        "wgh": "/mnt/d/share/data/docs/adoc/aim-",
+        "gjs": "/mnt/d/share/data/docs/adoc/aim-jishu",
+        "grs": "/mnt/d/share/data/docs/adoc/aim-rensheng",
+        "wsc": "/mnt/d/share/data/docs/adoc/shengchan",
+        "wr": "/mnt/d/share/data/docs/adoc/yuanli-ren",
+        "wjc": "/mnt/d/share/data/docs/adoc/wodejuece"
+    },
+    "route_nav": {
+        "wmn": "/mnt/d/share/data/docs/myNavigation/",
+        "nd": "/mnt/d/share/data/docs/myNavigation/doc-",
+        "np": "/mnt/d/share/data/docs/myNavigation/proj",
+        "nn": "/mnt/d/share/data/docs/myNavigation/daohang"
     },
     "chinese": {
         "bxjb": "编写脚本"

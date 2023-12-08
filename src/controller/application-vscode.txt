@@ -1,0 +1,3 @@
+LAlt & q::
+            ActivateAndOpen("wsl-beebox","C:\Program Files\Microsoft VS Code\Code.exe .\vscode-space\wsl-beebox.code-workspace")
+            return
