@@ -1,4 +1,4 @@
-#IfWinActive ahk_exe msedge.exe
+#IfWinActive ahk_exe chrome.exe
 
 +b::   ;继续内容的搜索
     send +b

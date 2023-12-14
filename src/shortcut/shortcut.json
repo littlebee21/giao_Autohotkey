@@ -35,6 +35,7 @@
     },
     "route_wsl": {
         "ww": "/mnt/d/share/work/",
+        "wwt": "/mnt/d/share/data/docs/worktemp",
         "ws": "/mnt/d/share/",
         "wwp": "/mnt/d/share/work/post/",
         "fbai": "/mnt/f/BaiduNetdiskDownload/",
@@ -57,7 +58,9 @@
         "grs": "/mnt/d/share/data/docs/adoc/aim-rensheng",
         "wsc": "/mnt/d/share/data/docs/adoc/shengchan",
         "wr": "/mnt/d/share/data/docs/adoc/yuanli-ren",
-        "wjc": "/mnt/d/share/data/docs/adoc/wodejuece"
+        "wjc": "/mnt/d/share/data/docs/adoc/wodejuece",
+        "wxx": "/mnt/d/share/data/docs/adoc/fangfa-xuexi-",
+        "wzl": "/mnt/d/share/data/docs/adoc/fangfa-zhengli-"
     },
     "route_nav": {
         "wmn": "/mnt/d/share/data/docs/myNavigation/",
@@ -66,6 +69,8 @@
         "nn": "/mnt/d/share/data/docs/myNavigation/daohang"
     },
     "chinese": {
-        "bxjb": "编写脚本"
+        "bxjb": "编写脚本",
+        "kw": "功能,为了,目的,区别,总结,组成,流程,例如,举例,示例,为例,例子,比如,包括,包含,属性,定义,概念,介绍,称为,对象,宏定义,关键字,函数,文件,配置,方案,问题,表示,模型,不同,差别,相比,使用,原理,步骤,下图,属于,实现,同理,但是",
+        "ekw": "function,aim,difference,sum,compos,example,sample,instance,define,concept,that,as,by,or,and,for"
     }
 }

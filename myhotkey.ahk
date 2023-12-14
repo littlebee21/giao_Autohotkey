@@ -1,6 +1,7 @@
 #include %A_ScriptDir%\myhotkey.ahk
 #include %A_ScriptDir%\src\controller\application-vscode.ahk
 #include %A_ScriptDir%\src\controller\application.ahk
+#include %A_ScriptDir%\src\controller\chrome.ahk
 #include %A_ScriptDir%\src\controller\edge.ahk
 #include %A_ScriptDir%\src\controller\everything.ahk
 #include %A_ScriptDir%\src\controller\global-mouse-cursor.ahk
@@ -24,4 +25,3 @@
 #include %A_ScriptDir%\src\route\route.ahk
 #include %A_ScriptDir%\src\shortcut\output.ahk
 #include %A_ScriptDir%\src\snippet\snippet.ahk
-#include %A_ScriptDir%\temp.ahk
