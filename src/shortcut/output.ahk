@@ -155,7 +155,10 @@ return
 sendByClipboard("编写脚本")
 return
 :*:kw,::
-sendByClipboard("功能,为了,目的,区别,总结,组成,流程,例如,举例,示例,为例,例子,比如,包括,包含,属性,定义,概念,介绍,称为,对象,宏定义,关键字,函数,文件,配置,方案,问题,表示,模型,不同,差别,相比,使用,原理,步骤,下图,属于,实现,同理,但是,阶段,模式,ifdef,类型")
+sendByClipboard("功能,为了,目的,区别,总结,组成,流程,例如,举例,示例,为例,例子,比如,包括,包含,属性,定义,概念,介绍,称为,对象,宏定义,关键字,函数,文件,配置,方案,问题,表示,模型,不同,差别,相比,使用,原理,步骤,下图,属于,实现,同理,但是,阶段,模式,ifdef,类型,是指,优点,缺点,规则")
+return
+:*:kwk,::
+sendByClipboard("功能 为了 目的 区别 总结 组成 流程 例如 举例 示例 为例 例子 比如 包括 包含 属性 定义 概念 介绍 称为 对象 宏定义 关键字 函数 文件 配置 方案 问题 表示 模型 不同 差别 相比 使用 原理 步骤 下图 属于 实现 同理 但是 阶段 模式 ifdef 类型 是指 优点 缺点 规则")
 return
 :*:ekw,::
 sendByClipboard("function,aim,difference,sum,compos,example,sample,instance,define,concept,that,as,by,or,and,for")

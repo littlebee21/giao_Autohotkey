@@ -1,6 +1,6 @@
 ;####### 打开网站 ####################
 :*:ai\::
-    run https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx
+    run C:\Program Files\Google\Chrome\Application\chrome.exe https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx
     return 
 
 :*:h\:: ;github网站
@@ -17,7 +17,7 @@ return
 :*:2\:: 
                             runWebSite("https://www.baidu.com/") 
 return
-!f:: ;;翻译网站
+!j:: ;;翻译网站
                             send ^c
                             sleep 200
                             run https://fanyi.baidu.com/#en/zh/%clipboard%

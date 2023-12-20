@@ -7,7 +7,6 @@
 #include %A_ScriptDir%\src\controller\global-mouse-cursor.ahk
 #include %A_ScriptDir%\src\controller\global.ahk
 #include %A_ScriptDir%\src\controller\linux-fzf.ahk
-#include %A_ScriptDir%\src\controller\terminal.ahk
 #include %A_ScriptDir%\src\controller\time.ahk
 #include %A_ScriptDir%\src\controller\vscode.ahk
 #include %A_ScriptDir%\src\controller\web.ahk

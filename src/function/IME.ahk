@@ -1,3 +1,15 @@
+;切换输入法的
+;SwitchIME(04090409) ; 英语(美国) 美式键盘
+;SwitchIME(04090409) ; 英语(美国) 美式键盘
+;SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘  
+;SwitchIME(0x08040804) ; 中文(中国) 简体中文-美式键盘  不能
+;SwitchIME(0x04090409) ; 英语(美国) 美式键盘 
+SwitchIME(dwLayout){
+    HKL:=DllCall("LoadKeyboardLayout",Str,dwLayout,UInt,1)
+    ControlGetFocus,ctl,A
+    SendMessage,0x50,0,HKL,%ct1%,A
+}
+
 SwitchEng() {
     SwitchIME(00000804) ; 中文(中国) 简体中文-美式键盘
     IME_SET(0)
