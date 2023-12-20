@@ -4,6 +4,7 @@ RAlt & a::   move("left")
 RAlt & s::   move("down")
 RAlt & d::   move("right")
 
+#MaxHotkeysPerInterval 990000
 RAlt & c::   moveCursor(13, "up")
 RAlt & x::   moveCursor(13, "down")
 
@@ -33,10 +34,7 @@ move(forward)
 
 moveCursor(step, forward)
 {
-    loop %step% 
-    {
-        send, {%forward%}
-    }
+    send, {%forward% %step%}
     ;MouseClick,WheelUp,,,1,0,D,R
     return
 }
