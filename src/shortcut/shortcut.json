@@ -52,16 +52,33 @@
     },
     "adoc": {
         "wad": "/mnt/d/share/data/docs/adoc/",
-        "wxm": "/mnt/d/share/data/docs/adoc/fangfa-xiangmu",
         "wgh": "/mnt/d/share/data/docs/adoc/aim-",
         "gjs": "/mnt/d/share/data/docs/adoc/aim-jishu",
         "grs": "/mnt/d/share/data/docs/adoc/aim-rensheng",
         "wsc": "/mnt/d/share/data/docs/adoc/shengchan",
-        "wr": "/mnt/d/share/data/docs/adoc/yuanli-ren",
         "wjc": "/mnt/d/share/data/docs/adoc/wodejuece",
-        "wxx": "/mnt/d/share/data/docs/adoc/fangfa-xuexi-",
-        "wxf": "/mnt/d/share/data/docs/adoc/xiangfa-",
-        "wzl": "/mnt/d/share/data/docs/adoc/fangfa-zhengli-"
+        "wzt": "/mnt/d/share/data/docs/adoc/wodezhuangtai",
+        "wxf": "/mnt/d/share/data/docs/adoc/xiangfa-"
+    },
+    "adoc_yuanli": {
+        "wr": "/mnt/d/share/data/docs/adoc/yuanli-ren",
+        "wdn": "/mnt/d/share/data/docs/adoc/yuanli-danao-",
+        "wjt": "/mnt/d/share/data/docs/adoc/yuanli-jiating-",
+        "wgl": "/mnt/d/share/data/docs/adoc/yuanli-guanli-",
+        "wzj": "/mnt/d/share/data/docs/adoc/yuanli-liaojie-",
+        "wwl": "/mnt/d/share/data/docs/adoc/yuanli-weilai-",
+        "wqz": "/mnt/d/share/data/docs/adoc/yuanli-quanzi-",
+        "wdg": "/mnt/d/share/data/docs/adoc/yuanli-dagong-"
+    },
+    "adoc_fangfa": {
+        "wzl": "/mnt/d/share/data/docs/adoc/fangfa-zhengli-",
+        "wxm": "/mnt/d/share/data/docs/adoc/fangfa-xiangmu",
+        "wwp": "/mnt/d/share/data/docs/adoc/fangfa-wupin",
+        "wx": "/mnt/d/share/data/docs/adoc/fangfa-xing-",
+        "wgz": "/mnt/d/share/data/docs/adoc/fangfa-gongzuo-",
+        "wscn": "/mnt/d/share/data/docs/adoc/fangfa-shengcun-",
+        "wms": "/mnt/d/share/data/docs/adoc/fangfa-mousheng-",
+        "wxx": "/mnt/d/share/data/docs/adoc/fangfa-xuexi-"
     },
     "route_nav": {
         "wmn": "/mnt/d/share/data/docs/myNavigation/",
