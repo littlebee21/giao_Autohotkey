@@ -9,7 +9,6 @@
         "gita": "git add . && git commit --no-verify && git push --set-upstream"
     },
     "ahk": {
-        "fd": "$FD"
     },
     "virtualbox": {
         "vm": "sudo /sbin/mount.vboxsf work_mount ~/work_mount/"
@@ -48,6 +47,7 @@
         "wd":  "/mnt/d/share/data/docs/",
         "wt":  "/mnt/d/share/data/docs/trash/",
         "wwd": "/mnt/d/share/data/docs/workcache",
+        "wl": "/mnt/d/share/data/local",
         "wsw": "/mnt/d/share/data/docs/siwei"
     },
     "adoc": {
@@ -78,13 +78,12 @@
         "wgz": "/mnt/d/share/data/docs/adoc/fangfa-gongzuo-",
         "wscn": "/mnt/d/share/data/docs/adoc/fangfa-shengcun-",
         "wms": "/mnt/d/share/data/docs/adoc/fangfa-mousheng-",
+        "wss": "/mnt/d/share/data/docs/adoc/fangfa-xuexi-学习/sousuo-",
         "wxx": "/mnt/d/share/data/docs/adoc/fangfa-xuexi-"
     },
     "route_nav": {
         "wmn": "/mnt/d/share/data/docs/myNavigation/",
-        "nd": "/mnt/d/share/data/docs/myNavigation/doc-",
-        "np": "/mnt/d/share/data/docs/myNavigation/proj",
-        "nn": "/mnt/d/share/data/docs/myNavigation/daohang"
+        "wmnc": "/mnt/d/share/data/docs/myNavigation/classification"
     },
     "chinese": {
         "bxjb": "编写脚本",

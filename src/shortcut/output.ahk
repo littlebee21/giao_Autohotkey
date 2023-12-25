@@ -10,9 +10,6 @@ return
 :*:gita,::
 sendByClipboard("git add . && git commit --no-verify && git push --set-upstream")
 return
-:*:fd,::
-sendByClipboard("$FD")
-return
 :*:vm,::
 sendByClipboard("sudo /sbin/mount.vboxsf work_mount ~/work_mount/")
 return
@@ -103,6 +100,9 @@ return
 :*:wwd,::
 sendByClipboard("/mnt/d/share/data/docs/workcache")
 return
+:*:wl,::
+sendByClipboard("/mnt/d/share/data/local")
+return
 :*:wsw,::
 sendByClipboard("/mnt/d/share/data/docs/siwei")
 return
@@ -175,20 +175,17 @@ return
 :*:wms,::
 sendByClipboard("/mnt/d/share/data/docs/adoc/fangfa-mousheng-")
 return
+:*:wss,::
+sendByClipboard("/mnt/d/share/data/docs/adoc/fangfa-xuexi-学习/sousuo-")
+return
 :*:wxx,::
 sendByClipboard("/mnt/d/share/data/docs/adoc/fangfa-xuexi-")
 return
 :*:wmn,::
 sendByClipboard("/mnt/d/share/data/docs/myNavigation/")
 return
-:*:nd,::
-sendByClipboard("/mnt/d/share/data/docs/myNavigation/doc-")
-return
-:*:np,::
-sendByClipboard("/mnt/d/share/data/docs/myNavigation/proj")
-return
-:*:nn,::
-sendByClipboard("/mnt/d/share/data/docs/myNavigation/daohang")
+:*:wmnc,::
+sendByClipboard("/mnt/d/share/data/docs/myNavigation/classification")
 return
 :*:bxjb,::
 sendByClipboard("编写脚本")

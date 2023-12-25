@@ -27,6 +27,6 @@ map = get_files_and_paths("./src")
 with open('snippet.ahk', 'w') as f:
     for key in map.keys():
         f.write(':*:' + str(key) + ',::\n')
-        f.write('sendFile(\"\snippet' + str(map[key]) + '\")\n')
+        f.write('sendFile(\"\src\snippet' + str(map[key]) + '\")\n')
         f.write('return\n')
 
