@@ -10,6 +10,9 @@ return
 :*:lk,::
 sendFile("\src\snippet\src\markdown\lk-link.txt")
 return
+:*:fc,::
+sendFile("\src\snippet\src\shell\fc-filecontent.sh")
+return
 :*:fd,::
 sendFile("\src\snippet\src\shell\fd-findaddr.sh")
 return
