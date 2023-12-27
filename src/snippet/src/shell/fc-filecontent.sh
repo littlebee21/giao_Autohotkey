@@ -1,1 +1,1 @@
-$(cat "/mnt/d/share/data/docs/myNavigation/classification/$FD")
+$(cat "$FD")

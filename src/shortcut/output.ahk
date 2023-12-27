@@ -70,11 +70,8 @@ return
 :*:wwp,::
 sendByClipboard("/mnt/d/share/work/post/")
 return
-:*:fbai,::
+:*:wbai,::
 sendByClipboard("/mnt/f/BaiduNetdiskDownload/")
-return
-:*:ebai,::
-sendByClipboard("/mnt/e/BaiduNetdiskDownload/")
 return
 :*:wg,::
 sendByClipboard("/mnt/d/share/gshell/src/")
