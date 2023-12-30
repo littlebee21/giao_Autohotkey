@@ -1,0 +1,14 @@
+功能 为了 目的 总结 实现 
+属性 模式 
+模型 属于 
+定义 概念 介绍 称为 下图 是指 表示 同理 
+优点 缺点 区别 不同 差别 相比 
+例如 举例 示例 为例 例子 比如 
+组成 流程 包括 包含 原理 步骤 阶段 方案 
+使用 规则 设计 
+问题 
+但是 
+对象 宏定义 关键字 函数 文件 配置 ifdef 类型 
+function aim difference sum compos example sample instance define concept that as by or and for 
+时间 频率 功耗 电源 协议 温度 波形 速率 
+电压 电容 电阻 电流 

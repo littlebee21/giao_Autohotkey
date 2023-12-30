@@ -7,6 +7,12 @@ return
 :*:cp,::
 sendFile("\src\snippet\src\c\cp-print.c")
 return
+:*:kw,::
+sendFile("\src\snippet\src\chinese\kw-keyword.txt")
+return
+:*:kwk,::
+sendFile("\src\snippet\src\chinese\kwk-keyworkkey.txt")
+return
 :*:lk,::
 sendFile("\src\snippet\src\markdown\lk-link.txt")
 return
@@ -18,4 +24,7 @@ sendFile("\src\snippet\src\shell\fd-findaddr.sh")
 return
 :*:fg,::
 sendFile("\src\snippet\src\shell\fg-findgshell.sh")
+return
+:*:ec23,::
+sendFile("\src\snippet\src\vim\ec23-encode23.txt")
 return
