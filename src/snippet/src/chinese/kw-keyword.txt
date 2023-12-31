@@ -11,4 +11,4 @@
 对象 宏定义 关键字 函数 文件 配置 ifdef 类型 
 function aim difference sum compos example sample instance define concept that as by or and for 
 时间 频率 功耗 电源 协议 温度 波形 速率 
-电压 电容 电阻 电流 
+电压 电容 电阻 电流 电平 

@@ -18,6 +18,9 @@
     },
     "vim": {
     },
+    "script": {
+        "giao": "/mnt/d/share/gshell/src/giao/giao.sh"
+    },
     "route_powershell": {
         "es" :    "D:\\share\\",
         "efbai" : "F:\\BaiduNetdiskDownload\\",
@@ -59,6 +62,10 @@
         "wsc": "/mnt/d/share/data/docs/adoc/shengchan",
         "wjc": "/mnt/d/share/data/docs/adoc/wodejuece",
         "wzt": "/mnt/d/share/data/docs/adoc/wodezhuangtai",
+        "wxs": "/mnt/d/share/data/docs/adoc/fangfa-xiaoshou-",
+        "wsc2": "/mnt/d/share/data/docs/adoc/fangfa-shichang-",
+        "wcp": "/mnt/d/share/data/docs/adoc/chanpin-",
+        "wgt": "/mnt/d/share/data/docs/adoc/fangfa-geti-",
         "wxf": "/mnt/d/share/data/docs/adoc/xiangfa-"
     },
     "adoc_yuanli": {
