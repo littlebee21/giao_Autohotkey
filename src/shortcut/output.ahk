@@ -139,6 +139,9 @@ return
 :*:wgt,::
 sendByClipboard("/mnt/d/share/data/docs/adoc/fangfa-geti-")
 return
+:*:wsj,::
+sendByClipboard("/mnt/d/share/data/docs/adoc/fangfa-shijian-")
+return
 :*:wxf,::
 sendByClipboard("/mnt/d/share/data/docs/adoc/xiangfa-")
 return
